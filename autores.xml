@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autores>
-    <autor id="A1">
-        <nombre>Miguel de Cervantes</nombre>
-        <nacionalidad>Española</nacionalidad>
-        <fechaNacimiento>1547-09-29</fechaNacimiento>
-        <fechaFallecimiento>1616-04-22</fechaFallecimiento>
-    </autor>
-</autores>

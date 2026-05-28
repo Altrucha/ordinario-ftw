@@ -1,1 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libros>
+        <libro id="L1">
+            <titulo>El Quijote</titulo>
+            <isbn>9780385533225</isbn>
+            <autor_id>A1</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1605</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780142437230-L.jpg</portada>
+        </libro>
+        <libro id="L2">
+            <titulo>Cien años de soledad</titulo>
+            <isbn>9780307474728</isbn>
+            <autor_id>A2</autor_id>
+            <editorial_id>E2</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1967</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780307474728-L.jpg</portada>
+        </libro>
+        <libro id="L3">
+            <titulo>1984</titulo>
+            <isbn>9788499890944</isbn>
+            <autor_id>A3</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G3</genero_id>
+            <anio>1949</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890944-L.jpg</portada>
+        </libro>
+        <libro id="L4">
+            <titulo>Fahrenheit 451</titulo>
+            <isbn>9788445077259</isbn>
+            <autor_id>A4</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G3</genero_id>
+            <anio>1953</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788445077259-L.jpg</portada>
+        </libro>
+        <libro id="L5">
+            <titulo>El principito</titulo>
+            <isbn>9788498381498</isbn>
+            <autor_id>A5</autor_id>
+            <editorial_id>E5</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1943</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788498381498-L.jpg</portada>
+        </libro>
+        <libro id="L6">
+            <titulo>Orgullo y prejuicio</titulo>
+            <isbn>9788415618760</isbn>
+            <autor_id>A6</autor_id>
+            <editorial_id>E6</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1813</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788415618760-L.jpg</portada>
+        </libro>
+        <libro id="L7">
+            <titulo>Dune</titulo>
+            <isbn>9788497596824</isbn>
+            <autor_id>A7</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G3</genero_id>
+            <anio>1965</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788497596824-L.jpg</portada>
+        </libro>
+        <libro id="L8">
+            <titulo>Drácula</titulo>
+            <isbn>9788491050094</isbn>
+            <autor_id>A8</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G5</genero_id>
+            <anio>1897</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788491050094-L.jpg</portada>
+        </libro>
+        <libro id="L9">
+            <titulo>Frankenstein</titulo>
+            <isbn>9788491050162</isbn>
+            <autor_id>A9</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G5</genero_id>
+            <anio>1818</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788491050162-L.jpg</portada>
+        </libro>
+        <libro id="L10">
+            <titulo>Rebelión en la granja</titulo>
+            <isbn>9788499890937</isbn>
+            <autor_id>A3</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1945</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890937-L.jpg</portada>
+        </libro>
+    </libros>
+
+    <autores>
+        <autor id="A1">
+            <nombre>Miguel de Cervantes</nombre>
+        </autor>
+        <autor id="A2">
+            <nombre>Gabriel García Márquez</nombre>
+        </autor>
+        <autor id="A3">
+            <nombre>George Orwell</nombre>
+        </autor>
+        <autor id="A4">
+            <nombre>Ray Bradbury</nombre>
+        </autor>
+        <autor id="A5">
+            <nombre>Antoine de Saint-Exupéry</nombre>
+        </autor>
+        <autor id="A6">
+            <nombre>Jane Austen</nombre>
+        </autor>
+        <autor id="A7">
+            <nombre>Frank Herbert</nombre>
+        </autor>
+        <autor id="A8">
+            <nombre>Bram Stoker</nombre>
+        </autor>
+        <autor id="A9">
+            <nombre>Mary Shelley</nombre>
+        </autor>
+    </autores>
+
+    <editoriales>
+        <editorial id="E1">
+            <nombre>Editorial Planeta</nombre>
+        </editorial>
+        <editorial id="E2">
+            <nombre>Editorial Sudamericana</nombre>
+        </editorial>
+        <editorial id="E3">
+            <nombre>Debolsillo</nombre>
+        </editorial>
+        <editorial id="E4">
+            <nombre>Minotauro</nombre>
+        </editorial>
+        <editorial id="E5">
+            <nombre>Salamandra</nombre>
+        </editorial>
+        <editorial id="E6">
+            <nombre>Alianza Editorial</nombre>
+        </editorial>
+        <editorial id="E7">
+            <nombre>Penguin Clásicos</nombre>
+        </editorial>
+    </editoriales>
+
+    <generos>
+        <genero id="G1">
+            <nombre>Novela</nombre>
+        </genero>
+        <genero id="G2">
+            <nombre>Realismo Mágico</nombre>
+        </genero>
+        <genero id="G3">
+            <nombre>Ciencia Ficción</nombre>
+        </genero>
+        <genero id="G4">
+            <nombre>Literatura Infantil</nombre>
+        </genero>
+        <genero id="G5">
+            <nombre>Terror</nombre>
+        </genero>
+    </generos>
+</biblioteca>
