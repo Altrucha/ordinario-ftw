@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+    <libro id="L1">
+        <titulo>El Quijote</titulo>
+        <autor_id>A1</autor_id>
+        <editorial_id>E1</editorial_id>
+        <genero_id>G1</genero_id>
+        <anio>1605</anio>
+    </libro>
+</libros>
