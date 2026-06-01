@@ -1,0 +1,173 @@
+.presentacion {
+    background: linear-gradient(
+        135deg,
+        var(--primary) 0%,
+        var(--primary-light) 100%
+    );
+    color: var(--on-primary);
+    padding: 3rem var(--spacing-xl);
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+.presentacion-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+    margin: 0 auto var(--spacing-xl);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.presentacion-contenido h1 {
+    font-size: var(--font-size-headline-md);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 600;
+}
+.presentacion-contenido p {
+    font-size: var(--font-size-body-lg);
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.95;
+    font-weight: 500;
+}
+.presentacion-contenido .boton-primario {
+    display: inline-flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    font-size: var(--font-size-label-lg);
+}
+.categorias-seccion {
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    background-color: var(--surface);
+}
+.categorias-seccion h2 {
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-headline-sm);
+    text-align: center;
+}
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+}
+.categoria-tarjeta {
+    background: var(--primary);
+    color: var(--on-primary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-short);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    box-shadow: var(--shadow);
+}
+.categoria-tarjeta:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+.categoria-tarjeta.alt1 {
+    background: var(--secondary);
+}
+.categoria-tarjeta.alt2 {
+    background: var(--tertiary);
+}
+.categoria-tarjeta.alt3 {
+    background: var(--primary-dark);
+}
+.categoria-tarjeta h3 {
+    font-size: var(--font-size-title-sm);
+    margin-bottom: var(--spacing-xs);
+    margin: 0;
+}
+.categoria-tarjeta p {
+    font-size: var(--font-size-body-sm);
+    opacity: 0.9;
+    margin: 0;
+}
+.estadisticas-seccion {
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    background-color: var(--surface-container-low);
+}
+.estadisticas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-lg);
+}
+.estadistica-tarjeta {
+    background-color: var(--surface-container-lowest);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: all var(--transition-short);
+}
+.estadistica-tarjeta:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+.estadistica-numero {
+    font-size: var(--font-size-headline-md);
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: var(--spacing-xs);
+}
+.estadistica-campo {
+    font-size: var(--font-size-body-md);
+    color: var(--on-surface);
+    font-weight: 500;
+}
+.footer {
+    background-color: var(--surface-container-high);
+    padding: var(--spacing-xl);
+    text-align: center;
+    border-top: 1px solid var(--outline-variant);
+    margin-top: var(--spacing-3xl);
+}
+.footer p {
+    margin: var(--spacing-sm) 0;
+    color: var(--outline);
+    font-size: var(--font-size-body-md);
+}
+@media (max-width: 768px) {
+    .presentacion {
+        padding: 3rem var(--spacing-lg);
+    }
+    .presentacion-contenido h1 {
+        font-size: var(--font-size-headline-lg);
+    }
+    .presentacion-contenido p {
+        font-size: var(--font-size-title-sm);
+    }
+    .grid-libros {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: var(--spacing-lg);
+    }
+    .libro-tarjeta-imagen {
+        height: 200px;
+    }
+    .estadisticas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .barra-superior {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .barra-superior-acciones {
+        flex-direction: column;
+        width: 100%;
+    }
+    .barra-superior-acciones a {
+        width: 100%;
+        justify-content: center;
+    }
+    .grid-libros {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}

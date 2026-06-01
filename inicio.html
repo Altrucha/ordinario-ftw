@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inicio - Biblioteca Digital</title>
+        <link rel="stylesheet" href="configuracion-vista.css" />
+        <link rel="stylesheet" href="inicio.css" />
+    </head>
+    <body>
+        <header class="barra-superior">
+            <img
+                src="logo.png"
+                alt="Logo Biblioteca Digital"
+                class="barra-superior-logo"
+            />
+            <h1>Biblioteca Digital</h1>
+        </header>
+        <main>
+            <section class="presentacion">
+                <div class="presentacion-contenido">
+                    <img
+                        src="logo.png"
+                        alt="Logo Biblioteca"
+                        class="presentacion-logo"
+                    />
+                    <h1>Bienvenido a Biblioteca Digital</h1>
+                    <p>
+                        Explora una gran colección de obras clásicas y
+                        contemporáneas
+                    </p>
+                    <a href="catalogo.html" class="boton-primario">Catálogo</a>
+                    <a href="autores.html" class="boton-primario">Autores</a>
+                </div>
+            </section>
+            <section class="categorias-seccion">
+                <div class="container">
+                    <h2>Categorías</h2>
+                    <div class="grid-categorias" id="generos-grid"></div>
+                </div>
+            </section>
+            <section class="estadisticas-seccion">
+                <div class="container">
+                    <h2>Estadísticas</h2>
+                    <div class="estadisticas-grid">
+                        <div class="estadistica-tarjeta">
+                            <div class="estadistica-numero" id="totalLibros">
+                                0
+                            </div>
+                            <div class="estadistica-campo">Libros</div>
+                        </div>
+                        <div class="estadistica-tarjeta">
+                            <div class="estadistica-numero" id="totalAutores">
+                                0
+                            </div>
+                            <div class="estadistica-campo">Autores</div>
+                        </div>
+                        <div class="estadistica-tarjeta">
+                            <div class="estadistica-numero" id="totalGeneros">
+                                0
+                            </div>
+                            <div class="estadistica-campo">Géneros</div>
+                        </div>
+                        <div class="estadistica-tarjeta">
+                            <div
+                                class="estadistica-numero"
+                                id="totalEditoriales"
+                            >
+                                0
+                            </div>
+                            <div class="estadistica-campo">Editoriales</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    &copy;2026 Biblioteca Digital. Todos los derechos
+                    reservados.
+                </p>
+            </div>
+        </footer>
+        <script src="biblioteca.js"></script>
+        <script src="inicio.js"></script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catálogo - Biblioteca Digital</title>
+        <link rel="stylesheet" href="configuracion-vista.css" />
+        <link rel="stylesheet" href="catalogo.css" />
+    </head>
+    <body>
+        <header class="barra-superior">
+            <img
+                src="logo.png"
+                alt="Logo Biblioteca Digital"
+                class="barra-superior-logo"
+            />
+            <h1>Biblioteca Digital</h1>
+            <div class="barra-superior-acciones">
+                <a href="inicio.html" class="boton-primario">Inicio</a>
+                <a href="autores.html" class="boton-primario">Autores</a>
+            </div>
+        </header>
+        <main class="catalogo-main">
+            <div class="catalogo-container">
+                <aside class="filtros-panel">
+                    <h3>Filtros</h3>
+                    <div class="filtro-grupo">
+                        <label for="busqueda">Buscar por título o autor</label>
+                        <input
+                            type="texto"
+                            id="busqueda"
+                            class="input"
+                            placeholder="Ej: Quijote"
+                        />
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="filtro-genero">Género</label>
+                        <select id="filtro-genero" class="select">
+                            <option value="">Todos los géneros</option>
+                        </select>
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="filtro-autor">Autor</label>
+                        <select id="filtro-autor" class="select">
+                            <option value="">Todos los autores</option>
+                        </select>
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="filtro-anio">Año de publicación</label>
+                        <select id="filtro-anio" class="select">
+                            <option value="">Todos los años</option>
+                        </select>
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="ordenamiento">Ordenar por</label>
+                        <select id="ordenamiento" class="select">
+                            <option value="titulo-ascendente">
+                                Título (A-Z)
+                            </option>
+                            <option value="titulo-descendente">
+                                Título (Z-A)
+                            </option>
+                            <option value="anio-ascendente">
+                                Año (Antiguos)
+                            </option>
+                            <option value="anio-descendente">
+                                Año (Recientes)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="filtro-acciones">
+                        <button
+                            id="limpiarFiltros"
+                            class="btn boton-secundario"
+                            style="width: 100%"
+                        >
+                            Limpiar filtros
+                        </button>
+                    </div>
+                </aside>
+                <div class="catalogo-contenido">
+                    <div class="catalogo-header">
+                        <h2>Catálogo</h2>
+                        <p id="resultados-info">Cargando...</p>
+                    </div>
+                    <div class="catalogo-grid" id="libros-grid">
+                        <div
+                            class="cargando"
+                            style="
+                                grid-column: 1/-1;
+                                text-align: center;
+                                padding: 3rem;
+                            "
+                        >
+                            <div class="carga-rueda"></div>
+                            <p>Cargando catálogo...</p>
+                        </div>
+                    </div>
+                    <div id="no-resultados" class="no-resultados oculto">
+                        <p>
+                            No se encontraron libros que coincidan con los
+                            filtros seleccionados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    &copy;2026 Biblioteca Digital. Todos los derechos
+                    reservados.
+                </p>
+            </div>
+        </footer>
+        <script src="biblioteca.js"></script>
+        <script src="catalogo.js"></script>
+    </body>
+</html>
