@@ -1,0 +1,98 @@
+:root {
+    --autores-grieta-gap: 1.5rem;
+}
+
+.autores-main {
+    padding: var(--spacing-lg);
+    background-color: var(--surface);
+}
+
+.autores-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+.autores-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.autores-header h2 {
+    font-size: var(--font-size-headline-sm);
+    margin: 0;
+}
+
+.autores-header p {
+    color: var(--outline);
+    font-size: var(--font-size-body-md);
+    margin: 0;
+}
+
+.autores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--autores-grieta-gap);
+}
+
+.autor-card {
+    background-color: var(--surface-container-lowest);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.autor-card-nombre {
+    font-size: var(--font-size-title-md);
+    margin: 0;
+}
+
+.autor-card-libros {
+    color: var(--outline);
+    font-size: var(--font-size-body-sm);
+    margin: 0;
+}
+
+.autor-card-acciones {
+    margin-top: auto;
+}
+
+.autor-card-btn {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--on-primary);
+    background-color: var(--primary);
+    font-weight: 600;
+    transition: background-color var(--transition-short);
+}
+
+.autor-card-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.autores-vacio {
+    padding: 3rem 1rem;
+    border: 1px dashed var(--outline-variant);
+    text-align: center;
+    color: var(--outline);
+    border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+    .autores-main {
+        padding: var(--spacing-md);
+    }
+    .autores-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

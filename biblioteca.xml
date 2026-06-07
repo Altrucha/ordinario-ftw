@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libros, autores, editoriales, generos, usuarios)>
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (titulo, isbn, autor_id, editorial_id, genero_id, anio, portada)>
+<!ATTLIST libro id ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT autor_id (#PCDATA)>
+<!ELEMENT editorial_id (#PCDATA)>
+<!ELEMENT genero_id (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT portada (#PCDATA)>
+<!ELEMENT autores (autor+)>
+<!ELEMENT autor (nombre)>
+<!ATTLIST autor id ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT editoriales (editorial+)>
+<!ELEMENT editorial (nombre)>
+<!ATTLIST editorial id ID #REQUIRED>
+<!ELEMENT generos (genero+)>
+<!ELEMENT genero (nombre)>
+<!ATTLIST genero id ID #REQUIRED>
+<!ELEMENT usuarios (usuario+)>
+<!ELEMENT usuario (nombre_usuario, contrasenia)>
+<!ATTLIST usuario id ID #REQUIRED>
+<!ELEMENT nombre_usuario (#PCDATA)>
+<!ELEMENT contrasenia (#PCDATA)>
+]>
 <biblioteca>
     <libros>
         <libro id="L1">
@@ -158,4 +186,18 @@
             <nombre>Terror</nombre>
         </genero>
     </generos>
+    <usuarios>
+        <usuario id="U1">
+            <nombre_usuario>zaid</nombre_usuario>
+            <contrasenia>12345</contrasenia>
+        </usuario>
+        <usuario id="U2">
+            <nombre_usuario>alexis</nombre_usuario>
+            <contrasenia>abcde</contrasenia>
+        </usuario>
+        <usuario id="U3">
+            <nombre_usuario>huescas</nombre_usuario>
+            <contrasenia>qwerty</contrasenia>
+        </usuario>
+    </usuarios>
 </biblioteca>

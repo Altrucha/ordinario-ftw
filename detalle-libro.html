@@ -1,11 +1,11 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Autores - Biblioteca Digital</title>
+        <title>Detalle del libro - Biblioteca Digital</title>
         <link rel="stylesheet" href="configuracion-vista.css" />
-        <link rel="stylesheet" href="autores.css" />
+        <link rel="stylesheet" href="detalle-libro.css" />
     </head>
     <body>
         <header class="barra-superior">
@@ -18,18 +18,19 @@
             <nav class="barra-superior-acciones">
                 <a href="inicio.html" class="boton-primario">Inicio</a>
                 <a href="catalogo.html" class="boton-primario">Catálogo</a>
+                <a href="autores.html" class="boton-primario">Autores</a>
             </div>
         </header>
-        <main class="autores-main">
-            <div class="autores-container">
-                <div class="autores-header">
-                    <h2>Autores</h2>
-                    <p>
-                        Descubre los autores disponibles en nuestra biblioteca y
-                        explora sus obras desde el catálogo.
-                    </p>
-                </div>
-                <div class="autores-grid" id="autores-grid"></div>
+        <main class="detalle-main">
+            <div class="detalle-container">
+                <div id="detalle-contenido"></div>
+                <section
+                    class="relacionados-seccion oculto"
+                    id="relacionados-section"
+                >
+                    <h3>Libros relacionados</h3>
+                    <div class="relacionados-grid" id="relacionados-grid"></div>
+                </section>
             </div>
         </main>
         <footer class="footer">
@@ -41,6 +42,6 @@
             </div>
         </footer>
         <script src="biblioteca.js"></script>
-        <script src="autores.js"></script>
+        <script src="detalle-libro.js"></script>
     </body>
 </html>

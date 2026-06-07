@@ -5,6 +5,7 @@ class Biblioteca {
             autores: {},
             editoriales: {},
             generos: {},
+            usuarios: [],
         };
         this.estaCargado = false;
         this.promesaCarga = this.cargarDatos();
@@ -54,9 +55,17 @@ class Biblioteca {
                         "Desconocido",
                 };
             });
+            const usuariosXml = doc.getElementsByTagName("usuario");
+            this.datos.usuarios = Array.from(usuariosXml).map((usuario) => ({
+                nombre_usuario:
+                    usuario.querySelector("nombre_usuario")?.textContent || "",
+                contrasenia:
+                    usuario.querySelector("contrasenia")?.textContent || "",
+            }));
             this.estaCargado = true;
             return true;
         } catch (error) {
+            console.error("Error al cargar XML: ", error);
             return false;
         }
     }
@@ -77,12 +86,6 @@ class Biblioteca {
     obtenerLibrosPorAutor(idAutor) {
         return this.datos.libros.filter((libro) => libro.autor_id === idAutor);
     }
-    buscarPorTitulo(consulta) {
-        const q = consulta.toLowerCase();
-        return this.datos.libros.filter((libro) =>
-            libro.titulo.toLowerCase().includes(q),
-        );
-    }
     obtenerAutores() {
         return Object.values(this.datos.autores).sort((a, b) =>
             a.nombre.localeCompare(b.nombre),
@@ -102,6 +105,19 @@ class Biblioteca {
     }
     obtenerEditorialPorId(id) {
         return this.datos.editoriales[id];
+    }
+    validarUsuario(nombre_usuario, contrasenia) {
+        return this.datos.usuarios.some(
+            (usuario) =>
+                usuario.nombre_usuario === nombre_usuario &&
+                usuario.contrasenia === contrasenia,
+        );
+    }
+    buscarPorTitulo(consulta) {
+        const q = consulta.toLowerCase();
+        return this.datos.libros.filter((libro) =>
+            libro.titulo.toLowerCase().includes(q),
+        );
     }
     filtrarLibros(filtros) {
         let resultado = [...this.datos.libros];

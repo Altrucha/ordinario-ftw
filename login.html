@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Iniciar sesión - Biblioteca Digital</title>
+        <link rel="stylesheet" href="configuracion-vista.css" />
+        <link rel="stylesheet" href="login.css" />
+    </head>
+    <body>
+        <header class="barra-superior">
+            <img
+                src="logo.png"
+                alt="Logo Biblioteca Digital"
+                class="barra-superior-logo"
+            />
+            <h1>Biblioteca Digital</h1>
+        </header>
+        <main class="container mt-xl mb-xl">
+            <section class="card" style="max-width: 400px; margin: 2rem auto">
+                <h2 class="text-center">Acceso</h2>
+                <form id="formulario-login" class="flex-col gap-md mt-md">
+                    <div class="filtro-grupo">
+                        <label for="nombre_usuario">Usuario:</label>
+                        <input
+                            type="text"
+                            id="nombre_usuario"
+                            class="input"
+                            required
+                        />
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="contrasenia">Contraseña:</label>
+                        <input
+                            type="contrasenia"
+                            id="contrasenia"
+                            class="input"
+                            required
+                        />
+                    </div>
+                    <button
+                        type="submit"
+                        class="boton-primario"
+                        style="width: 100%; border: none"
+                    >
+                        Ingresar
+                    </button>
+                    <p
+                        id="mensaje-error"
+                        class="text-error oculto text-center mt-sm"
+                    >
+                        Credenciales incorrectas. Inténtalo de nuevo.
+                    </p>
+                </form>
+            </section>
+        </main>
+        <script src="biblioteca.js"></script>
+        <script src="login.js"></script>
+    </body>
+</html>
