@@ -49,12 +49,12 @@
         </libro>
         <libro id="L3">
             <titulo>1984</titulo>
-            <isbn>9788499890944</isbn>
+            <isbn>9780451524935</isbn>
             <autor_id>A3</autor_id>
             <editorial_id>E3</editorial_id>
             <genero_id>G2</genero_id>
             <anio>1949</anio>
-            <portada>https://covers.openlibrary.org/b/isbn/9788499890944-L.jpg</portada>
+            <portada>https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg</portada>
         </libro>
         <libro id="L4">
             <titulo>Fahrenheit 451</titulo>
@@ -99,7 +99,7 @@
             <editorial_id>E7</editorial_id>
             <genero_id>G4</genero_id>
             <anio>1897</anio>
-            <portada>https://covers.openlibrary.org/b/isbn/9788491050094-L.jpg</portada>
+            <portada></portada>
         </libro>
         <libro id="L9">
             <titulo>Frankenstein</titulo>
@@ -118,6 +118,690 @@
             <genero_id>G2</genero_id>
             <anio>1945</anio>
             <portada>https://covers.openlibrary.org/b/isbn/9788499890937-L.jpg</portada>
+        </libro>
+        <libro id="L11">
+            <titulo>El alquimista</titulo>
+            <isbn>9780061122415</isbn>
+            <autor_id>A10</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1988</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg</portada>
+        </libro>
+        <libro id="L12">
+            <titulo>Harry Potter y la piedra filosofal</titulo>
+            <isbn>9780747532699</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1997</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780747532699-L.jpg</portada>
+        </libro>
+        <libro id="L13">
+            <titulo>It</titulo>
+            <isbn>9781501142970</isbn>
+            <autor_id>A12</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1986</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9781501142970-L.jpg</portada>
+        </libro>
+        <libro id="L14">
+            <titulo>Novelas ejemplares</titulo>
+            <isbn>9788491054573</isbn>
+            <autor_id>A1</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1613</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788491054573-L.jpg</portada>
+        </libro>
+        <libro id="L15">
+            <titulo>La Galatea</titulo>
+            <isbn>9788491050435</isbn>
+            <autor_id>A1</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1585</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788491050435-L.jpg</portada>
+        </libro>
+        <libro id="L16">
+            <titulo>Los trabajos de Persiles y Sigismunda</titulo>
+            <isbn>9788499891309</isbn>
+            <autor_id>A1</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1617</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499891309-L.jpg</portada>
+        </libro>
+        <libro id="L17">
+            <titulo>El viaje del Parnaso</titulo>
+            <isbn>9788491054344</isbn>
+            <autor_id>A1</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1614</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788491054344-L.jpg</portada>
+        </libro>
+        <libro id="L18">
+            <titulo>La Numancia</titulo>
+            <isbn>9788499891064</isbn>
+            <autor_id>A1</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1585</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499891064-L.jpg</portada>
+        </libro>
+        <libro id="L19">
+            <titulo>El amor en los tiempos del cólera</titulo>
+            <isbn>9780307389732</isbn>
+            <autor_id>A2</autor_id>
+            <editorial_id>E2</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1985</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780307389732-L.jpg</portada>
+        </libro>
+        <libro id="L20">
+            <titulo>Crónica de una muerte anunciada</titulo>
+            <isbn>9780307476135</isbn>
+            <autor_id>A2</autor_id>
+            <editorial_id>E2</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1981</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780307476135-L.jpg</portada>
+        </libro>
+        <libro id="L21">
+            <titulo>Del amor y otros demonios</titulo>
+            <isbn>9780307389909</isbn>
+            <autor_id>A2</autor_id>
+            <editorial_id>E2</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1994</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780307389909-L.jpg</portada>
+        </libro>
+        <libro id="L22">
+            <titulo>La hojarasca</titulo>
+            <isbn>9780307474650</isbn>
+            <autor_id>A2</autor_id>
+            <editorial_id>E2</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1955</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780307474650-L.jpg</portada>
+        </libro>
+        <libro id="L23">
+            <titulo>El coronel no tiene quien le escriba</titulo>
+            <isbn>9780307476616</isbn>
+            <autor_id>A2</autor_id>
+            <editorial_id>E2</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1961</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780307476616-L.jpg</portada>
+        </libro>
+        <libro id="L24">
+            <titulo>Los funerales de la Mamá Grande</titulo>
+            <isbn>9780307475045</isbn>
+            <autor_id>A2</autor_id>
+            <editorial_id>E2</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1972</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780307475045-L.jpg</portada>
+        </libro>
+        <libro id="L25">
+            <titulo>El general en su laberinto</titulo>
+            <isbn>9780307475694</isbn>
+            <autor_id>A2</autor_id>
+            <editorial_id>E2</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1989</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780307475694-L.jpg</portada>
+        </libro>
+        <libro id="L26">
+            <titulo>Homenaje a Cataluña</titulo>
+            <isbn>9780451520753</isbn>
+            <autor_id>A3</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1938</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780451520753-L.jpg</portada>
+        </libro>
+        <libro id="L27">
+            <titulo>El camino a Wigan Pier</titulo>
+            <isbn>9780141181337</isbn>
+            <autor_id>A3</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1937</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141181337-L.jpg</portada>
+        </libro>
+        <libro id="L28">
+            <titulo>Sin blanca en París y Londres</titulo>
+            <isbn>9780141394288</isbn>
+            <autor_id>A3</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1933</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141394288-L.jpg</portada>
+        </libro>
+        <libro id="L29">
+            <titulo>Mantén el aspidistra volando</titulo>
+            <isbn>9780141186226</isbn>
+            <autor_id>A3</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1936</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141186226-L.jpg</portada>
+        </libro>
+        <libro id="L30">
+            <titulo>Coming Up for Air</titulo>
+            <isbn>9780141184970</isbn>
+            <autor_id>A3</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1939</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141184970-L.jpg</portada>
+        </libro>
+        <libro id="L31">
+            <titulo>Inglaterra, tu Inglaterra y otros ensayos</titulo>
+            <isbn>9780141180474</isbn>
+            <autor_id>A3</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1941</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141180474-L.jpg</portada>
+        </libro>
+        <libro id="L32">
+            <titulo>Crónicas marcianas</titulo>
+            <isbn>9788499081454</isbn>
+            <autor_id>A4</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1950</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499081454-L.jpg</portada>
+        </libro>
+        <libro id="L33">
+            <titulo>El hombre ilustrado</titulo>
+            <isbn>9788499890821</isbn>
+            <autor_id>A4</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1951</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890821-L.jpg</portada>
+        </libro>
+        <libro id="L34">
+            <titulo>El país de octubre</titulo>
+            <isbn>9788499890906</isbn>
+            <autor_id>A4</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1955</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890906-L.jpg</portada>
+        </libro>
+        <libro id="L35">
+            <titulo>El árbol de Halloween</titulo>
+            <isbn>9780345334468</isbn>
+            <autor_id>A4</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1972</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780345334468-L.jpg</portada>
+        </libro>
+        <libro id="L36">
+            <titulo>El vino del estío</titulo>
+            <isbn>9788499890489</isbn>
+            <autor_id>A4</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1957</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890489-L.jpg</portada>
+        </libro>
+        <libro id="L37">
+            <titulo>La feria de las tinieblas</titulo>
+            <isbn>9788499891194</isbn>
+            <autor_id>A4</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1962</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499891194-L.jpg</portada>
+        </libro>
+        <libro id="L38">
+            <titulo>Vuelo nocturno</titulo>
+            <isbn>9788420422825</isbn>
+            <autor_id>A5</autor_id>
+            <editorial_id>E5</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1931</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788420422825-L.jpg</portada>
+        </libro>
+        <libro id="L39">
+            <titulo>Tierra de hombres</titulo>
+            <isbn>9788498381481</isbn>
+            <autor_id>A5</autor_id>
+            <editorial_id>E5</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1939</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788498381481-L.jpg</portada>
+        </libro>
+        <libro id="L40">
+            <titulo>Carta a un rehén</titulo>
+            <isbn>9788498381528</isbn>
+            <autor_id>A5</autor_id>
+            <editorial_id>E5</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1942</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788498381528-L.jpg</portada>
+        </libro>
+        <libro id="L41">
+            <titulo>Piloto de guerra</titulo>
+            <isbn>9788498381535</isbn>
+            <autor_id>A5</autor_id>
+            <editorial_id>E5</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1942</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788498381535-L.jpg</portada>
+        </libro>
+        <libro id="L42">
+            <titulo>Lady Susan</titulo>
+            <isbn>9780141439709</isbn>
+            <autor_id>A6</autor_id>
+            <editorial_id>E6</editorial_id>
+            <genero_id>G8</genero_id>
+            <anio>1871</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141439709-L.jpg</portada>
+        </libro>
+        <libro id="L43">
+            <titulo>Emma</titulo>
+            <isbn>9780141439587</isbn>
+            <autor_id>A6</autor_id>
+            <editorial_id>E6</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1815</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141439587-L.jpg</portada>
+        </libro>
+        <libro id="L44">
+            <titulo>Persuasión</titulo>
+            <isbn>9780141439686</isbn>
+            <autor_id>A6</autor_id>
+            <editorial_id>E6</editorial_id>
+            <genero_id>G8</genero_id>
+            <anio>1817</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141439686-L.jpg</portada>
+        </libro>
+        <libro id="L45">
+            <titulo>Mansfield Park</titulo>
+            <isbn>9780141439808</isbn>
+            <autor_id>A6</autor_id>
+            <editorial_id>E6</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1814</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141439808-L.jpg</portada>
+        </libro>
+        <libro id="L46">
+            <titulo>Sentido y sensibilidad</titulo>
+            <isbn>9780141439662</isbn>
+            <autor_id>A6</autor_id>
+            <editorial_id>E6</editorial_id>
+            <genero_id>G8</genero_id>
+            <anio>1811</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141439662-L.jpg</portada>
+        </libro>
+        <libro id="L47">
+            <titulo>La abadía de Northanger</titulo>
+            <isbn>9780141439792</isbn>
+            <autor_id>A6</autor_id>
+            <editorial_id>E6</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1817</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780141439792-L.jpg</portada>
+        </libro>
+        <libro id="L48">
+            <titulo>El mesías de Dune</titulo>
+            <isbn>9788445070695</isbn>
+            <autor_id>A7</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1969</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788445070695-L.jpg</portada>
+        </libro>
+        <libro id="L49">
+            <titulo>Los hijos de Dune</titulo>
+            <isbn>9788445070718</isbn>
+            <autor_id>A7</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1976</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788445070718-L.jpg</portada>
+        </libro>
+        <libro id="L50">
+            <titulo>Dios emperador de Dune</titulo>
+            <isbn>9788445070732</isbn>
+            <autor_id>A7</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1981</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788445070732-L.jpg</portada>
+        </libro>
+        <libro id="L51">
+            <titulo>Herejes de Dune</titulo>
+            <isbn>9788445070787</isbn>
+            <autor_id>A7</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1984</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788445070787-L.jpg</portada>
+        </libro>
+        <libro id="L52">
+            <titulo>Casa Capitular Dune</titulo>
+            <isbn>9788445070794</isbn>
+            <autor_id>A7</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1985</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788445070794-L.jpg</portada>
+        </libro>
+        <libro id="L53">
+            <titulo>El planeta de las tormentas</titulo>
+            <isbn>9788445070688</isbn>
+            <autor_id>A7</autor_id>
+            <editorial_id>E4</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1956</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788445070688-L.jpg</portada>
+        </libro>
+        <libro id="L54">
+            <titulo>La joya de las siete estrellas</titulo>
+            <isbn>9788491050088</isbn>
+            <autor_id>A8</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1903</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788491050088-L.jpg</portada>
+        </libro>
+        <libro id="L55">
+            <titulo>La dama del sudario</titulo>
+            <isbn>9781497617657</isbn>
+            <autor_id>A8</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1909</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9781497617657-L.jpg</portada>
+        </libro>
+        <libro id="L56">
+            <titulo>La guarida del gusano blanco</titulo>
+            <isbn>9788499891046</isbn>
+            <autor_id>A8</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1911</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499891046-L.jpg</portada>
+        </libro>
+        <libro id="L57">
+            <titulo>El huésped de Drácula</titulo>
+            <isbn>9780451528018</isbn>
+            <autor_id>A8</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1914</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780451528018-L.jpg</portada>
+        </libro>
+        <libro id="L58">
+            <titulo>Mathilda</titulo>
+            <isbn>9780140431668</isbn>
+            <autor_id>A9</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1819</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780140431668-L.jpg</portada>
+        </libro>
+        <libro id="L59">
+            <titulo>Valperga</titulo>
+            <isbn>9780140431644</isbn>
+            <autor_id>A9</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1823</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780140431644-L.jpg</portada>
+        </libro>
+        <libro id="L60">
+            <titulo>Falkner</titulo>
+            <isbn>9780140431705</isbn>
+            <autor_id>A9</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1837</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780140431705-L.jpg</portada>
+        </libro>
+        <libro id="L61">
+            <titulo>Lodore</titulo>
+            <isbn>9780140431651</isbn>
+            <autor_id>A9</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1835</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780140431651-L.jpg</portada>
+        </libro>
+        <libro id="L62">
+            <titulo>El último hombre</titulo>
+            <isbn>9788499894078</isbn>
+            <autor_id>A9</autor_id>
+            <editorial_id>E7</editorial_id>
+            <genero_id>G1</genero_id>
+            <anio>1826</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499894078-L.jpg</portada>
+        </libro>
+        <libro id="L63">
+            <titulo>Once minutos</titulo>
+            <isbn>9780062510423</isbn>
+            <autor_id>A10</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>2003</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780062510423-L.jpg</portada>
+        </libro>
+        <libro id="L64">
+            <titulo>Veronika decide morir</titulo>
+            <isbn>9780061979127</isbn>
+            <autor_id>A10</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1998</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780061979127-L.jpg</portada>
+        </libro>
+        <libro id="L65">
+            <titulo>El peregrino de Compostela</titulo>
+            <isbn>9780062515886</isbn>
+            <autor_id>A10</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1987</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780062515886-L.jpg</portada>
+        </libro>
+        <libro id="L66">
+            <titulo>Brida</titulo>
+            <isbn>9780061578885</isbn>
+            <autor_id>A10</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1990</anio>
+            <portada></portada>
+        </libro>
+        <libro id="L67">
+            <titulo>Aleph</titulo>
+            <isbn>9780062116910</isbn>
+            <autor_id>A10</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>2010</anio>
+            <portada></portada>
+        </libro>
+        <libro id="L68">
+            <titulo>La quinta montaña</titulo>
+            <isbn>9780060847819</isbn>
+            <autor_id>A10</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G2</genero_id>
+            <anio>1996</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780060847819-L.jpg</portada>
+        </libro>
+        <libro id="L69">
+            <titulo>Harry Potter y la cámara secreta</titulo>
+            <isbn>9780747538493</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1998</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780747538493-L.jpg</portada>
+        </libro>
+        <libro id="L70">
+            <titulo>Harry Potter y el prisionero de Azkaban</titulo>
+            <isbn>9780747542155</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1999</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780747542155-L.jpg</portada>
+        </libro>
+        <libro id="L71">
+            <titulo>Harry Potter y el cáliz de fuego</titulo>
+            <isbn>9780747546245</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>2000</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780747546245-L.jpg</portada>
+        </libro>
+        <libro id="L72">
+            <titulo>Harry Potter y la orden del Fénix</titulo>
+            <isbn>9780747551003</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>2003</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780747551003-L.jpg</portada>
+        </libro>
+        <libro id="L73">
+            <titulo>Harry Potter y el misterio del príncipe</titulo>
+            <isbn>9780747571008</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>2005</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780747571008-L.jpg</portada>
+        </libro>
+        <libro id="L74">
+            <titulo>Harry Potter y las reliquias de la muerte</titulo>
+            <isbn>9780545010221</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>2007</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780545010221-L.jpg</portada>
+        </libro>
+        <libro id="L75">
+            <titulo>El resplandor</titulo>
+            <isbn>9788499890997</isbn>
+            <autor_id>A12</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1977</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890997-L.jpg</portada>
+        </libro>
+        <libro id="L76">
+            <titulo>Misery</titulo>
+            <isbn>9788499890522</isbn>
+            <autor_id>A12</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1987</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890522-L.jpg</portada>
+        </libro>
+        <libro id="L77">
+            <titulo>Carrie</titulo>
+            <isbn>9788491050323</isbn>
+            <autor_id>A12</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1974</anio>
+            <portada></portada>
+        </libro>
+        <libro id="L78">
+            <titulo>El cuerpo</titulo>
+            <isbn>9788499890997</isbn>
+            <autor_id>A13</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G5</genero_id>
+            <anio>1983</anio>
+            <portada></portada>
+        </libro>
+        <libro id="L79">
+            <titulo>Cementerio de animales</titulo>
+            <isbn>9788499892399</isbn>
+            <autor_id>A12</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1983</anio>
+            <portada></portada>
+        </libro>
+        <libro id="L80">
+            <titulo>Apocalipsis</titulo>
+            <isbn>9788499890355</isbn>
+            <autor_id>A12</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G4</genero_id>
+            <anio>1978</anio>
+            <portada></portada>
+        </libro>
+        <libro id="L81">
+            <titulo>La torre oscura: El pistolero</titulo>
+            <isbn>9788401342115</isbn>
+            <autor_id>A12</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>1982</anio>
+            <portada></portada>
+        </libro>
+        <libro id="L82">
+            <titulo>Animales fantásticos y dónde encontrarlos</titulo>
+            <isbn>9780545157352</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>2001</anio>
+            <portada></portada>
+        </libro>
+        <libro id="L83">
+            <titulo>Quidditch a través de los tiempos</titulo>
+            <isbn>9780545157369</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>2001</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780545157369-L.jpg</portada>
+        </libro>
+        <libro id="L84">
+            <titulo>Los cuentos de Beedle el Bardo</titulo>
+            <isbn>9780545157376</isbn>
+            <autor_id>A11</autor_id>
+            <editorial_id>E1</editorial_id>
+            <genero_id>G6</genero_id>
+            <anio>2008</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9780545157376-L.jpg</portada>
+        </libro>
+        <libro id="L85">
+            <titulo>La importancia de llamarse Ernesto</titulo>
+            <isbn>9788499890980</isbn>
+            <autor_id>A14</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G5</genero_id>
+            <anio>1895</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890980-L.jpg</portada>
+        </libro>
+        <libro id="L86">
+            <titulo>El fantasma de Canterville</titulo>
+            <isbn>9788499890980</isbn>
+            <autor_id>A14</autor_id>
+            <editorial_id>E3</editorial_id>
+            <genero_id>G5</genero_id>
+            <anio>1887</anio>
+            <portada>https://covers.openlibrary.org/b/isbn/9788499890980-L.jpg</portada>
         </libro>
     </libros>
     <autores>
@@ -148,6 +832,27 @@
         <autor id="A9">
             <nombre>Mary Shelley</nombre>
         </autor>
+        <autor id="A10">
+            <nombre>Paulo Coelho</nombre>
+        </autor>
+        <autor id="A11">
+            <nombre>J.K. Rowling</nombre>
+        </autor>
+        <autor id="A12">
+            <nombre>Stephen King</nombre>
+        </autor>
+        <autor id="A13">
+            <nombre>Clive Barker</nombre>
+        </autor>
+        <autor id="A14">
+            <nombre>H.P. Lovecraft</nombre>
+        </autor>
+        <autor id="A15">
+            <nombre>J.R.R. Tolkien</nombre>
+        </autor>
+        <autor id="A16">
+            <nombre>George R.R. Martin</nombre>
+        </autor>
     </autores>
     <editoriales>
         <editorial id="E1">
@@ -171,6 +876,12 @@
         <editorial id="E7">
             <nombre>Penguin Clásicos</nombre>
         </editorial>
+        <editorial id="E8">
+            <nombre>Editorial Santillana</nombre>
+        </editorial>
+        <editorial id="E9">
+            <nombre>Editorial Alfaguara</nombre>
+        </editorial>
     </editoriales>
     <generos>
         <genero id="G1">
@@ -184,6 +895,18 @@
         </genero>
         <genero id="G4">
             <nombre>Terror</nombre>
+        </genero>
+        <genero id="G5">
+            <nombre>Comedia</nombre>
+        </genero>
+        <genero id="G6">
+            <nombre>Fantasía</nombre>
+        </genero>
+        <genero id="G7">
+            <nombre>Tragedia</nombre>
+        </genero>
+        <genero id="G8">
+            <nombre>Romance</nombre>
         </genero>
     </generos>
     <usuarios>

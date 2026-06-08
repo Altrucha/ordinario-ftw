@@ -41,7 +41,7 @@ const inicio_modulo = (() => {
                         <td><strong>${genero.nombre}</strong></td>
                         <td>${total_libros} libro${total_libros !== 1 ? "s" : ""}</td>
                         <td>
-                            <a href="catalogo.html?genero=${genero.id}" class="btn btn boton_secundario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
+                            <a href="catalogo.html?genero=${genero.id}" class="btn boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
                                 Ver libros
                             </a>
                         </td>

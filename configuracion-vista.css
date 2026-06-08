@@ -591,7 +591,7 @@ main {
 }
 
 /* Catálogo */
-.catalogo-main {
+.catalogo_main {
     padding: var(--spacing-lg);
     background-color: var(--surface);
 }
@@ -602,7 +602,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
-.filtros-panel {
+.filtros_panel {
     background-color: var(--surface-container-lowest);
     padding: var(--spacing-lg);
     border-radius: var(--radius-md);
@@ -611,23 +611,23 @@ main {
     top: 80px;
     box-shadow: var(--shadow);
 }
-.filtros-panel h3 {
+.filtros_panel h3 {
     font-size: var(--font-size-title-md);
     margin-bottom: var(--spacing-md);
     color: var(--on-surface);
 }
-.filtro-grupo {
+.filtro_grupo {
     margin-bottom: var(--spacing-md);
 }
-.filtro-grupo label {
+.filtro_grupo label {
     display: block;
     font-size: var(--font-size-body-sm);
     font-weight: 500;
     margin-bottom: var(--spacing-xs);
     color: var(--on-surface);
 }
-.filtro-grupo input,
-.filtro-grupo select {
+.filtro_grupo input,
+.filtro_grupo select {
     width: 100%;
 }
 .filtro_acciones {
@@ -635,13 +635,13 @@ main {
     gap: var(--spacing-sm);
     margin-top: var(--spacing-lg);
 }
-.catalogo-contenido {
+.catalogo_contenido {
     flex: 1;
 }
-.catalogo-header {
+.catalogo_header {
     margin-bottom: var(--spacing-lg);
 }
-.catalogo-header h2 {
+.catalogo_header h2 {
     font-size: var(--font-size-headline-sm);
     margin-bottom: var(--spacing-sm);
 }
@@ -723,7 +723,7 @@ main {
 .catalogo-libro-tarjeta_interactiva-btn:hover {
     background-color: var(--primary-dark);
 }
-.no-resultados {
+.no_resultados {
     grid-column: 1 / -1;
     text-align: center;
     padding: 4rem var(--spacing-xl);
@@ -731,7 +731,7 @@ main {
     border-radius: var(--radius-lg);
     border: 2px dashed var(--outline-variant);
 }
-.no-resultados p {
+.no_resultados p {
     font-size: var(--font-size-title-md);
     color: var(--outline);
 }
@@ -751,7 +751,7 @@ main {
     .catalogo-container {
         grid-template-columns: 240px 1fr;
     }
-    .filtros-panel {
+    .filtros_panel {
         position: static;
     }
 }
@@ -759,7 +759,7 @@ main {
     .catalogo-container {
         grid-template-columns: 1fr;
     }
-    .filtros-panel {
+    .filtros_panel {
         position: static;
         margin-bottom: var(--spacing-xl);
     }
@@ -772,7 +772,7 @@ main {
     }
 }
 @media (max-width: 480px) {
-    .catalogo-main {
+    .catalogo_main {
         padding: var(--spacing-lg);
     }
     .catalogo-grid {
