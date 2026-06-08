@@ -39,7 +39,11 @@ const inicio_modulo = (() => {
                 return `
                     <tr>
                         <td><strong>${genero.nombre}</strong></td>
-                        <td>${total_libros} libro${total_libros !== 1 ? "s" : ""}</td>
+                        <td>
+                            <span class="badge">
+                                ${total_libros} libro${total_libros !== 1 ? "s" : ""}
+                            </span>
+                        </td>
                         <td>
                             <a href="catalogo.html?genero=${genero.id}" class="btn boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
                                 Ver libros

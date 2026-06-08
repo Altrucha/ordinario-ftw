@@ -13,6 +13,7 @@ const catalogo_modulo = (() => {
                 <nav class="barra_superior_acciones" aria-label="Navegación principal">
                     <a href="inicio.html" class="boton_primario">Inicio</a>
                     <a href="autores.html" class="boton_primario">Autores</a>
+                    <a href="editoriales.html" class="boton_primario">Editoriales</a>
                     <a href="acerca-de.html" class="boton_primario">Acerca de</a>
                     <a href="#" id="boton_cerrar_sesion" class="boton_primario" style="background-color: var(--error);">Cerrar sesión</a>
                 </nav>
@@ -96,7 +97,7 @@ const catalogo_modulo = (() => {
                         <td><span class="badge">${genero?.nombre}</span></td>
                         <td><code>${libro.anio}</code></td>
                         <td>
-                            <a href="detalle-libro.html?id=${libro.id}" class="btn boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
+                            <a href="detalle_libro.html?id=${libro.id}" class="btn boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
                                 Ver detalles
                             </a>
                         </td>

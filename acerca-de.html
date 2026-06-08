@@ -7,22 +7,16 @@
         <link rel="stylesheet" href="configuracion-vista.css" />
     </head>
     <body>
-        <header class="barra_superior">
-            <img
-                src="logo.png"
-                alt="Logo Biblioteca Digital"
-                class="barra_superior_logo"
-            />
-            <h1>Biblioteca Digital</h1>
-            <nav class="barra_superior_acciones">
-                <a href="inicio.html" class="boton_primario">Inicio</a>
-            </nav>
-        </header>
-        <main class="acerca-main contenedor_principal">
-            <article class="tarjeta_interactiva acerca-contenido">
-                <h2>Acerca del Proyecto</h2>
-                <blockquote class="acerca-cita">
+        <div id="componente_header"></div>
+        <main
+            class="acerca_main contenedor_principal"
+            aria-labelledby="titulo_acerca"
+        >
+            <article class="tarjeta_interactiva acerca_contenido">
+                <h2 id="titulo_acerca">Acerca del proyecto</h2>
+                <blockquote class="acerca_cita" aria-label="Cita inspiradora">
                     "La lectura es a la mente lo que el ejercicio al cuerpo."
+                    -Joseph Addison.
                 </blockquote>
                 <p>
                     Nuestra misión es democratizar el acceso a la literatura
@@ -31,45 +25,52 @@
                 </p>
             </article>
             <section
-                class="estadisticas-seccion"
+                class="estadisticas_seccion"
                 aria-labelledby="titulo_estadisticas"
+                style="width: 100%; border-radius: var(--radius-lg)"
             >
                 <div class="container">
-                    <h2 id="titulo_estadisticas" class="mb-lg">
-                        Estadísticas de la Colección
+                    <h2
+                        id="titulo_estadisticas"
+                        class="mb-lg"
+                        style="text-align: center"
+                    >
+                        Estadísticas de la biblioteca
                     </h2>
-                    <div class="estadisticas-grid">
-                        <div class="estadistica-tarjeta">
-                            <div class="estadistica-numero" id="total_libros">
-                                0
-                            </div>
-                            <div class="estadistica-campo">Libros</div>
-                        </div>
-                        <div class="estadistica-tarjeta">
-                            <div class="estadistica-numero" id="total_autores">
-                                0
-                            </div>
-                            <div class="estadistica-campo">Autores</div>
-                        </div>
-                        <div class="estadistica-tarjeta">
-                            <div class="estadistica-numero" id="total_generos">
-                                0
-                            </div>
-                            <div class="estadistica-campo">Géneros</div>
-                        </div>
-                        <div class="estadistica-tarjeta">
+                    <div class="estadisticas_grid">
+                        <div class="estadistica_tarjeta">
                             <div
-                                class="estadistica-numero"
+                                class="estadistica_numero"
+                                id="total_libros"
+                            ></div>
+                            <div class="estadistica_campo">Libros</div>
+                        </div>
+                        <div class="estadistica_tarjeta">
+                            <div
+                                class="estadistica_numero"
+                                id="total_autores"
+                            ></div>
+                            <div class="estadistica_campo">Autores</div>
+                        </div>
+                        <div class="estadistica_tarjeta">
+                            <div
+                                class="estadistica_numero"
+                                id="total_generos"
+                            ></div>
+                            <div class="estadistica_campo">Géneros</div>
+                        </div>
+                        <div class="estadistica_tarjeta">
+                            <div
+                                class="estadistica_numero"
                                 id="total_editoriales"
-                            >
-                                0
-                            </div>
-                            <div class="estadistica-campo">Editoriales</div>
+                            ></div>
+                            <div class="estadistica_campo">Editoriales</div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+        <div id="componente_footer"></div>
         <script src="biblioteca.js"></script>
         <script src="acerca-de.js"></script>
     </body>

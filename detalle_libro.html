@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detalle del libro - Biblioteca Digital</title>
+        <link rel="stylesheet" href="configuracion-vista.css" />
+    </head>
+    <body>
+        <div id="componente_header"></div>
+        <main class="detalle_main">
+            <div class="detalle_container">
+                <article id="detalle_contenido" aria-live="polite"></article>
+                <section
+                    class="relacionados_seccion oculto"
+                    id="relacionados_seccion"
+                    aria-labelledby="titulo_relacionados"
+                >
+                    <h3 id="titulo_relacionados">Libros relacionados</h3>
+                    <div class="relacionados_grid" id="relacionados_grid"></div>
+                </section>
+            </div>
+        </main>
+        <div id="componente_footer"></div>
+        <script src="biblioteca.js"></script>
+        <script src="detalle_libro.js"></script>
+    </body>
+</html>

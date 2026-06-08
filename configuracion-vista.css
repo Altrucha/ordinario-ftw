@@ -467,7 +467,7 @@ main {
 /* Page-specific module styles */
 
 /* Acerca de */
-.acerca-main {
+.acerca_main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -475,11 +475,11 @@ main {
     padding: 0 var(--spacing-xl);
 }
 
-.acerca-contenido {
+.acerca_contenido {
     width: min(100%, 760px);
 }
 
-.acerca-cita {
+.acerca_cita {
     border-left: 4px solid var(--primary);
     padding-left: 1rem;
     margin: 1.5rem 0;
@@ -488,38 +488,38 @@ main {
 }
 
 @media (min-width: 768px) {
-    .acerca-main {
+    .acerca_main {
         padding: 0;
     }
 }
 
 /* Autores */
 
-.autores-main {
+.autores_main {
     padding: var(--spacing-lg);
     background-color: var(--surface);
 }
 
-.autores-container {
+.autores_container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     gap: var(--spacing-lg);
 }
 
-.autores-header {
+.autores_header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
     margin-bottom: var(--spacing-lg);
 }
 
-.autores-header h2 {
+.autores_header h2 {
     font-size: var(--font-size-headline-sm);
     margin: 0;
 }
 
-.autores-header p {
+.autores_header p {
     color: var(--outline);
     font-size: var(--font-size-body-md);
     margin: 0;
@@ -573,7 +573,7 @@ main {
     background-color: var(--primary-dark);
 }
 
-.autores-vacio {
+.autores_vacio {
     padding: 3rem 1rem;
     border: 1px dashed var(--outline-variant);
     text-align: center;
@@ -582,7 +582,7 @@ main {
 }
 
 @media (max-width: 768px) {
-    .autores-main {
+    .autores_main {
         padding: var(--spacing-md);
     }
     .autores-grid {
@@ -868,15 +868,15 @@ main {
 .detalle_boton:hover {
     background-color: var(--primary-dark);
 }
-.relacionados-seccion {
+.relacionados_seccion {
     display: grid;
     gap: var(--spacing-lg);
 }
-.relacionados-seccion h3 {
+.relacionados_seccion h3 {
     margin: 0;
     font-size: var(--font-size-title-md);
 }
-.relacionados-grid {
+.relacionados_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: var(--spacing-lg);
@@ -1013,16 +1013,16 @@ main {
     opacity: 0.9;
     margin: 0;
 }
-.estadisticas-seccion {
+.estadisticas_seccion {
     padding: var(--spacing-2xl) var(--spacing-xl);
     background-color: var(--surface-container-low);
 }
-.estadisticas-grid {
+.estadisticas_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: var(--spacing-lg);
 }
-.estadistica-tarjeta {
+.estadistica_tarjeta {
     background-color: var(--surface-container-lowest);
     padding: var(--spacing-lg);
     border-radius: var(--radius-md);
@@ -1030,17 +1030,17 @@ main {
     box-shadow: var(--shadow);
     transition: all var(--transition-short);
 }
-.estadistica-tarjeta:hover {
+.estadistica_tarjeta:hover {
     box-shadow: var(--shadow-lg);
     transform: translateY(-2px);
 }
-.estadistica-numero {
+.estadistica_numero {
     font-size: var(--font-size-headline-md);
     font-weight: 700;
     color: var(--primary);
     margin-bottom: var(--spacing-xs);
 }
-.estadistica-campo {
+.estadistica_campo {
     font-size: var(--font-size-body-md);
     color: var(--on-surface);
     font-weight: 500;
@@ -1062,7 +1062,7 @@ main {
     .libro-tarjeta-imagen {
         height: 200px;
     }
-    .estadisticas-grid {
+    .estadisticas_grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }

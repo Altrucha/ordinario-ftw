@@ -7,38 +7,42 @@
         <link rel="stylesheet" href="configuracion-vista.css" />
     </head>
     <body>
-        <header class="barra_superior">
-            <img
-                src="logo.png"
-                alt="Logo Biblioteca Digital"
-                class="barra_superior_logo"
-            />
-            <h1>Biblioteca Digital</h1>
-            <nav class="barra_superior_acciones">
-                <a href="inicio.html" class="boton_primario">Inicio</a>
-                <a href="catalogo.html" class="boton_primario">Catálogo</a>
-            </div>
-        </header>
-        <main class="autores-main">
-            <div class="autores-container">
-                <div class="autores-header">
+        <div id="componente_header"></div>
+        <main class="autores_main">
+            <div class="autores_container">
+                <div class="autores_header">
                     <h2>Autores</h2>
                     <p>
                         Descubre los autores disponibles en nuestra biblioteca y
                         explora sus obras desde el catálogo.
                     </p>
                 </div>
-                <div class="autores-grid" id="autores-grid"></div>
+                <div style="overflow-x: auto">
+                    <table
+                        class="tabla_datos"
+                        id="tabla_autores"
+                        aria-label="Lista de autores disponibles"
+                    >
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre del autor</th>
+                                <th scope="col">Disponibles</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpo_tabla_autores"></tbody>
+                    </table>
+                </div>
+                <div
+                    id="autores_vacio"
+                    class="autores_vacio oculto"
+                    role="alert"
+                >
+                    No hay autores disponibles.
+                </div>
             </div>
         </main>
-        <footer class="footer">
-            <div class="container">
-                <p>
-                    &copy;2026 Biblioteca Digital. Todos los derechos
-                    reservados.
-                </p>
-            </div>
-        </footer>
+        <div id="componente_footer"></div>
         <script src="biblioteca.js"></script>
         <script src="autores.js"></script>
     </body>
