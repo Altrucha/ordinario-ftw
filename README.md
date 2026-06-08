@@ -11,7 +11,7 @@ Febrero 2026 - Junio 2026.
 
 ## Documentación del proyecto
 
-- GitHub Pages: <https://>
+- GitHub Pages: <https://altrucha.github.io/ordinario-ftw/>
 - Video de presentación: <https://www.youtube.com/watch?v=3ybJYNn9O9A>
 
 ## Prompts utilizados
