@@ -5,83 +5,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Inicio - Biblioteca Digital</title>
         <link rel="stylesheet" href="configuracion-vista.css" />
-        <link rel="stylesheet" href="inicio.css" />
     </head>
     <body>
-        <header class="barra-superior">
-            <img
-                src="logo.png"
-                alt="Logo Biblioteca Digital"
-                class="barra-superior-logo"
-            />
-            <h1>Biblioteca Digital</h1>
-        </header>
+        <div id="componente_header"></div>
         <main>
             <section class="presentacion">
-                <div class="presentacion-contenido">
+                <div class="presentacion_contenido">
                     <img
                         src="logo.png"
-                        alt="Logo Biblioteca"
-                        class="presentacion-logo"
+                        alt="Logo Biblioteca Digital"
+                        class="presentacion_logo"
                     />
                     <h1>Bienvenido a Biblioteca Digital</h1>
                     <p>
                         Explora una gran colección de obras clásicas y
                         contemporáneas
                     </p>
-                    <a href="catalogo.html" class="boton-primario">Catálogo</a>
-                    <a href="autores.html" class="boton-primario">Autores</a>
+                    <div
+                        class="detalle_boton_grupo"
+                        style="justify-content: center"
+                    >
+                        <a href="catalogo.html" class="boton_primario"
+                            >Ver catálogo</a
+                        >
+                        <a href="autores.html" class="boton_primario"
+                            >Ver autores</a
+                        >
+                    </div>
                 </div>
             </section>
-            <section class="categorias-seccion">
+            <section
+                class="categorias_seccion"
+                aria-labelledby="titulo_categorias"
+            >
                 <div class="container">
-                    <h2>Categorías</h2>
-                    <div class="grid-categorias" id="generos-grid"></div>
-                </div>
-            </section>
-            <section class="estadisticas-seccion">
-                <div class="container">
-                    <h2>Estadísticas</h2>
-                    <div class="estadisticas-grid">
-                        <div class="estadistica-tarjeta">
-                            <div class="estadistica-numero" id="totalLibros">
-                                0
-                            </div>
-                            <div class="estadistica-campo">Libros</div>
-                        </div>
-                        <div class="estadistica-tarjeta">
-                            <div class="estadistica-numero" id="totalAutores">
-                                0
-                            </div>
-                            <div class="estadistica-campo">Autores</div>
-                        </div>
-                        <div class="estadistica-tarjeta">
-                            <div class="estadistica-numero" id="totalGeneros">
-                                0
-                            </div>
-                            <div class="estadistica-campo">Géneros</div>
-                        </div>
-                        <div class="estadistica-tarjeta">
-                            <div
-                                class="estadistica-numero"
-                                id="totalEditoriales"
-                            >
-                                0
-                            </div>
-                            <div class="estadistica-campo">Editoriales</div>
-                        </div>
+                    <h2 id="titulo_categorias" class="mb-lg">
+                        Géneros disponibles
+                    </h2>
+                    <div style="overflow-x: auto">
+                        <table
+                            class="tabla_datos"
+                            aria-describedby="titulo_categorias"
+                        >
+                            <thead>
+                                <tr>
+                                    <th scope="col">Género</th>
+                                    <th scope="col">Disponibles</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cuerpo_tabla_generos"></tbody>
+                        </table>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="container">
-                <p>
-                    &copy;2026 Biblioteca Digital. Todos los derechos
-                    reservados.
-                </p>
-            </div>
-        </footer>
+        <div id="componente_footer"></div>
         <script src="biblioteca.js"></script>
         <script src="inicio.js"></script>
     </body>

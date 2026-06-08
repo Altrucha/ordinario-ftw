@@ -5,22 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Acerca de - Biblioteca Digital</title>
         <link rel="stylesheet" href="configuracion-vista.css" />
-        <link rel="stylesheet" href="acerca-de.css" />
     </head>
     <body>
-        <header class="barra-superior">
+        <header class="barra_superior">
             <img
                 src="logo.png"
                 alt="Logo Biblioteca Digital"
-                class="barra-superior-logo"
+                class="barra_superior_logo"
             />
             <h1>Biblioteca Digital</h1>
-            <nav class="barra-superior-acciones">
-                <a href="inicio.html" class="boton-primario">Inicio</a>
+            <nav class="barra_superior_acciones">
+                <a href="inicio.html" class="boton_primario">Inicio</a>
             </nav>
         </header>
-        <main class="acerca-main container mt-xl mb-xl">
-            <article class="card acerca-contenido">
+        <main class="acerca-main contenedor_principal">
+            <article class="tarjeta_interactiva acerca-contenido">
                 <h2>Acerca del Proyecto</h2>
                 <blockquote class="acerca-cita">
                     "La lectura es a la mente lo que el ejercicio al cuerpo."
@@ -31,7 +30,47 @@
                     estándares web modernos.
                 </p>
             </article>
+            <section
+                class="estadisticas-seccion"
+                aria-labelledby="titulo_estadisticas"
+            >
+                <div class="container">
+                    <h2 id="titulo_estadisticas" class="mb-lg">
+                        Estadísticas de la Colección
+                    </h2>
+                    <div class="estadisticas-grid">
+                        <div class="estadistica-tarjeta">
+                            <div class="estadistica-numero" id="total_libros">
+                                0
+                            </div>
+                            <div class="estadistica-campo">Libros</div>
+                        </div>
+                        <div class="estadistica-tarjeta">
+                            <div class="estadistica-numero" id="total_autores">
+                                0
+                            </div>
+                            <div class="estadistica-campo">Autores</div>
+                        </div>
+                        <div class="estadistica-tarjeta">
+                            <div class="estadistica-numero" id="total_generos">
+                                0
+                            </div>
+                            <div class="estadistica-campo">Géneros</div>
+                        </div>
+                        <div class="estadistica-tarjeta">
+                            <div
+                                class="estadistica-numero"
+                                id="total_editoriales"
+                            >
+                                0
+                            </div>
+                            <div class="estadistica-campo">Editoriales</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <script src="biblioteca.js"></script>
         <script src="acerca-de.js"></script>
     </body>
 </html>

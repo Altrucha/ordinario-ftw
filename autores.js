@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    await biblioteca.esperar();
+    await biblioteca.esperar_carga();
     cargarAutores();
 });
 
@@ -19,15 +19,15 @@ function cargarAutores() {
                 autor.id,
             ).length;
             return `
-                <article class="autor-card">
-                    <h3 class="autor-card-nombre">${autor.nombre}</h3>
-                    <p class="autor-card-libros">${librosDelAutor} libro${
+                <article class="autor-tarjeta_interactiva">
+                    <h3 class="autor-tarjeta_interactiva-nombre">${autor.nombre}</h3>
+                    <p class="autor-tarjeta_interactiva-libros">${librosDelAutor} libro${
                         librosDelAutor !== 1 ? "s" : ""
                     }</p>
-                    <div class="autor-card-acciones">
+                    <div class="autor-tarjeta_interactiva_acciones">
                         <a
                             href="catalogo.html?autor=${autor.id}"
-                            class="autor-card-btn"
+                            class="autor-tarjeta_interactiva-btn"
                         >
                             Ver libros
                         </a>

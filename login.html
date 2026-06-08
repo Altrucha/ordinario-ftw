@@ -3,57 +3,61 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Iniciar sesión - Biblioteca Digital</title>
+        <title>Login - Biblioteca Digital</title>
         <link rel="stylesheet" href="configuracion-vista.css" />
-        <link rel="stylesheet" href="login.css" />
     </head>
     <body>
-        <header class="barra-superior">
-            <img
-                src="logo.png"
-                alt="Logo Biblioteca Digital"
-                class="barra-superior-logo"
-            />
-            <h1>Biblioteca Digital</h1>
-        </header>
-        <main class="container mt-xl mb-xl">
-            <section class="card" style="max-width: 400px; margin: 2rem auto">
-                <h2 class="text-center">Acceso</h2>
-                <form id="formulario-login" class="flex-col gap-md mt-md">
-                    <div class="filtro-grupo">
-                        <label for="nombre_usuario">Usuario:</label>
+        <div id="componente_header"></div>
+        <main class="contenedor_principal">
+            <section
+                class="tarjeta_interactiva login_tarjeta"
+                aria-labelledby="titulo_login"
+            >
+                <div class="login_encabezado texto_centro">
+                    <h2 id="titulo_login">Iniciar sesión</h2>
+                    <p>
+                        Ingresa tus credenciales para acceder a Biblioteca
+                        Digital.
+                    </p>
+                </div>
+                <form
+                    id="formulario_login"
+                    class="formulario_login"
+                    aria-describedby="mensaje_error"
+                >
+                    <div class="grupo_filtro texto_centro">
+                        <label for="nombre_usuario">Usuario</label>
                         <input
+                            class="input"
                             type="text"
                             id="nombre_usuario"
-                            class="input"
+                            name="nombre_usuario"
                             required
+                            aria-required="true"
                         />
                     </div>
-                    <div class="filtro-grupo">
-                        <label for="contrasenia">Contraseña:</label>
+                    <div class="grupo_filtro texto_centro">
+                        <label for="contrasenia">Contraseña</label>
                         <input
-                            type="contrasenia"
-                            id="contrasenia"
                             class="input"
+                            type="password"
+                            id="contrasenia"
+                            name="contrasenia"
                             required
+                            aria-required="true"
                         />
                     </div>
-                    <button
-                        type="submit"
-                        class="boton-primario"
-                        style="width: 100%; border: none"
-                    >
+                    <button type="submit" class="boton_primario">
                         Ingresar
                     </button>
-                    <p
-                        id="mensaje-error"
-                        class="text-error oculto text-center mt-sm"
-                    >
-                        Credenciales incorrectas. Inténtalo de nuevo.
-                    </p>
+                    <div
+                        id="mensaje_error"
+                        class="oculto texto_error mt-sm texto_centro"
+                    ></div>
                 </form>
             </section>
         </main>
+        <div id="componente_footer"></div>
         <script src="biblioteca.js"></script>
         <script src="login.js"></script>
     </body>

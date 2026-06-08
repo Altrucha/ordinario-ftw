@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    await biblioteca.esperar();
+    await biblioteca.esperar_carga();
     const params = new URLSearchParams(window.location.search);
     const libroId = params.get("id");
 
@@ -20,38 +20,38 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function mostrarError(mensaje) {
-    const contenedor = document.getElementById("detalle-contenido");
-    contenedor.innerHTML = `<div class="mensaje-error">${mensaje}</div>`;
+    const contenedor = document.getElementById("detalle_contenido");
+    contenedor.innerHTML = `<div class="mensaje_error">${mensaje}</div>`;
 }
 
 function mostrarDetalle(libro) {
-    const contenedor = document.getElementById("detalle-contenido");
+    const contenedor = document.getElementById("detalle_contenido");
     const autorNombre = libro.autor?.nombre || "Desconocido";
     const editorialNombre = libro.editorial?.nombre || "Desconocida";
     const generoNombre = libro.genero?.nombre || "Sin género";
 
     contenedor.innerHTML = `
-        <div class="detalle-card">
+        <div class="detalle_tarjeta_interactiva">
             <img
                 src="${libro.portada}"
                 alt="Portada de ${libro.titulo}"
-                class="detalle-imagen"
+                class="detalle_imagen"
             />
-            <div class="detalle-informacion">
-                <h2 class="detalle-titulo">${libro.titulo}</h2>
-                <div class="detalle-meta">
+            <div class="detalle_informacion">
+                <h2 class="detalle_titulo">${libro.titulo}</h2>
+                <div class="detalle_meta">
                     <span><strong>Autor:</strong> <a href="catalogo.html?autor=${libro.autor_id}">${autorNombre}</a></span>
                     <span><strong>Editorial:</strong> ${editorialNombre}</span>
                     <span><strong>Género:</strong> <a href="catalogo.html?genero=${libro.genero_id}">${generoNombre}</a></span>
                     <span><strong>Año:</strong> ${libro.anio}</span>
                     <span><strong>ISBN:</strong> ${libro.isbn}</span>
                 </div>
-                <p class="detalle-resumen">
+                <p class="detalle_resumen">
                     Información del libro basada en la colección de la biblioteca.
                 </p>
-                <div class="detalle-boton-grupo">
-                    <a href="catalogo.html" class="detalle-boton">Volver al catálogo</a>
-                    <a href="autores.html" class="detalle-boton">Ver autores</a>
+                <div class="detalle_boton_grupo">
+                    <a href="catalogo.html" class="detalle_boton">Volver al catálogo</a>
+                    <a href="autores.html" class="detalle_boton">Ver autores</a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@ function cargarRelacionados(libro) {
             <article class="libro-relacionado">
                 <h4 class="libro-relacionado-titulo">${item.titulo}</h4>
                 <p class="libro-relacionado-meta">${item.detalle}</p>
-                <a href="detalle-libro.html?id=${item.id}">Ver detalles</a>
+                <a href="detalle_libro.html?id=${item.id}">Ver detalles</a>
             </article>
         `,
         )

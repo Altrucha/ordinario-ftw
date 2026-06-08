@@ -6,7 +6,7 @@ let filtrosActuales = {
     orden: "titulo-ascendente",
 };
 document.addEventListener("DOMContentLoaded", async () => {
-    await biblioteca.esperar();
+    await biblioteca.esperar_carga();
     inicializarSelectsDeGeneros();
     inicializarSelectsDeAutores();
     inicializarSelectsDeAnios();
@@ -118,16 +118,16 @@ function mostrarLibros(libros) {
             const autor = biblioteca.obtenerAutorPorId(libro.autor_id);
             const genero = biblioteca.obtenerGeneroPorId(libro.genero_id);
             return `
-            <article class="catalogo-libro-card">
+            <article class="catalogo-libro-tarjeta_interactiva">
                 <img src="${libro.portada}" alt="${libro.titulo}" class="catalogo-libro-tarjeta-imagen" onerror="this.src='https://via.placeholder.com/200x260?text=Sin+portada'">
-                <div class="catalogo-libro-card-contenido">
-                    <h3 class="catalogo-libro-card-title">${libro.titulo}</h3>
-                    <p class="catalogo-libro-card-info">${autor?.nombre || "Autor desconocido"}</p>
-                    <div class="catalogo-libro-card-meta">
+                <div class="catalogo-libro-tarjeta_interactiva-contenido">
+                    <h3 class="catalogo-libro-tarjeta_interactiva-title">${libro.titulo}</h3>
+                    <p class="catalogo-libro-tarjeta_interactiva-info">${autor?.nombre || "Autor desconocido"}</p>
+                    <div class="catalogo-libro-tarjeta_interactiva-meta">
                         <span class="badge">${genero?.nombre || "Género"}</span>
                         <span class="badge">${libro.anio}</span>
                     </div>
-                    <a href="detalle-libro.html?id=${libro.id}" class="catalogo-libro-card-btn">Ver Detalles</a>
+                    <a href="detalle_libro.html?id=${libro.id}" class="catalogo-libro-tarjeta_interactiva-btn">Ver Detalles</a>
                 </div>
             </article>
         `;
