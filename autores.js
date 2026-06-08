@@ -1,30 +1,4 @@
 const autores_modulo = (() => {
-    const renderizar_componentes = () => {
-        const encabezado_html = `
-            <encabezado class="barra_superior">
-                <img src="logo.png" alt="Logo Biblioteca Digital" class="barra_superior_logo" />
-                <h1>Biblioteca Digital</h1>
-                <nav class="barra_superior_acciones" aria-label="Navegación principal">
-                    <a href="inicio.html" class="boton_primario">Inicio</a>
-                    <a href="catalogo.html" class="boton_primario">Catálogo</a>
-                    <a href="editoriales.html" class="boton_primario">Editoriales</a>
-                    <a href="acerca_de.html" class="boton_primario">Acerca de</a>
-                    <a href="#" id="boton_cerrar_sesion" class="boton_primario" style="background-color: var(--error);">Cerrar sesión</a>
-                </nav>
-            </encabezado>
-        `;
-        const pie_pagina_html = `
-            <pie_pagina class="pie_pagina">
-                <div class="contenedor">
-                    <p>&copy;2026 Biblioteca Digital. Todos los derechos reservados.</p>
-                </div>
-            </pie_pagina>
-        `;
-        document.getElementById("componente_encabezado").innerHTML =
-            encabezado_html;
-        document.getElementById("componente_pie_pagina").innerHTML =
-            pie_pagina_html;
-    };
     const cargar_autores = () => {
         const cuerpo_tabla = document.getElementById("cuerpo_tabla_autores");
         const contenedor_vacio = document.getElementById("autores_vacio");
@@ -51,12 +25,7 @@ const autores_modulo = (() => {
                             </span>
                         </td>
                         <td>
-                            <a 
-                                href="catalogo.html?autor=${autor.id}" 
-                                class="boton boton_primario"
-                                style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);"
-                                aria-label="Ver todos los libros escritos por ${autor.nombre}"
-                            >
+                            <a href="catalogo.html?autor=${autor.id}" class="boton boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);" aria-label="Ver todos los libros escritos por ${autor.nombre}">
                                 Ver libros
                             </a>
                         </td>
@@ -66,13 +35,11 @@ const autores_modulo = (() => {
             .join("");
     };
     const inicializar = async () => {
-        renderizar_componentes();
+        biblioteca.renderizar_componentes_globales();
         await biblioteca.esperar_carga();
         cargar_autores();
     };
-    return {
-        inicializar_modulo: inicializar,
-    };
+    return { inicializar_modulo: inicializar };
 })();
 document.addEventListener("DOMContentLoaded", () => {
     autores_modulo.inicializar_modulo();

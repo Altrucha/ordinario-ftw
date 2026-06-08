@@ -1,27 +1,4 @@
 const inicio_modulo = (() => {
-    const renderizar_componentes = () => {
-        const encabezado_html = `
-            <encabezado class="barra_superior">
-                <img src="logo.png" alt="Logo Biblioteca Digital" class="barra_superior_logo" />
-                <h1>Biblioteca Digital</h1>
-                <nav class="barra_superior_acciones" aria-label="Navegación principal">
-                    <a href="acerca_de.html" class="boton_primario">Acerca de</a>
-                    <a href="#" id="boton_cerrar_sesion" class="boton_primario" style="background-color: var(--error);">Cerrar sesión</a>
-                </nav>
-            </encabezado>
-        `;
-        const pie_pagina_html = `
-            <pie_pagina class="pie_pagina">
-                <div class="contenedor">
-                    <p>&copy;2026 Biblioteca Digital. Todos los derechos reservados.</p>
-                </div>
-            </pie_pagina>
-        `;
-        document.getElementById("componente_encabezado").innerHTML =
-            encabezado_html;
-        document.getElementById("componente_pie_pagina").innerHTML =
-            pie_pagina_html;
-    };
     const cargar_tabla_generos = () => {
         const cuerpo_tabla = document.getElementById("cuerpo_tabla_generos");
         const generos = biblioteca.obtener_generos();
@@ -57,13 +34,11 @@ const inicio_modulo = (() => {
             .join("");
     };
     const inicializar = async () => {
-        renderizar_componentes();
+        biblioteca.renderizar_componentes_globales();
         await biblioteca.esperar_carga();
         cargar_tabla_generos();
     };
-    return {
-        inicializar_modulo: inicializar,
-    };
+    return { inicializar_modulo: inicializar };
 })();
 document.addEventListener("DOMContentLoaded", () => {
     inicio_modulo.inicializar_modulo();

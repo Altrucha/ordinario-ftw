@@ -291,7 +291,7 @@ main {
     font-weight: 600;
     color: var(--on-surface);
 }
-.tarjeta_interactiva-img {
+.tarjeta_interactiva_img {
     width: 100%;
     height: 240px;
     object-fit: cover;
@@ -317,14 +317,14 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: var(--spacing-xl);
 }
-.grid-xl {
+.grid_xl {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
-    .grid-xl {
+    .grid_xl {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
@@ -379,7 +379,7 @@ main {
     color: var(--on-primary);
     border-color: var(--primary);
 }
-.carga-rueda {
+.carga_rueda {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -399,28 +399,28 @@ main {
     padding: 0 var(--spacing-xl);
     width: 100%;
 }
-.mt-sm {
+.mt_sm {
     margin-top: var(--spacing-sm);
 }
-.mt-md {
+.mt_md {
     margin-top: var(--spacing-md);
 }
-.mt-lg {
+.mt_lg {
     margin-top: var(--spacing-lg);
 }
-.mt-xl {
+.mt_xl {
     margin-top: var(--spacing-xl);
 }
-.mb-sm {
+.mb_sm {
     margin-bottom: var(--spacing-sm);
 }
-.mb-md {
+.mb_md {
     margin-bottom: var(--spacing-md);
 }
-.mb-lg {
+.mb_lg {
     margin-bottom: var(--spacing-lg);
 }
-.mb-xl {
+.mb_xl {
     margin-bottom: var(--spacing-xl);
 }
 .gap-sm {
@@ -436,11 +436,11 @@ main {
     display: flex;
     align-items: center;
 }
-.flex-col {
+.flex_col {
     display: flex;
     flex-direction: column;
 }
-.flex-between {
+.flex_between {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -454,7 +454,7 @@ main {
 .texto_error {
     color: var(--error);
 }
-.text-primary {
+.texto_primario {
     color: var(--primary);
 }
 .oculto {
@@ -524,11 +524,11 @@ main {
     flex-direction: column;
     gap: var(--spacing-sm);
 }
-.autor_tarjeta_interactiva-nombre {
+.autor_tarjeta_interactiva_nombre {
     font-size: var(--font-size-title-md);
     margin: 0;
 }
-.autor_tarjeta_interactiva-libros {
+.autor_tarjeta_interactiva_libros {
     color: var(--outline);
     font-size: var(--font-size-body-sm);
     margin: 0;
@@ -536,7 +536,7 @@ main {
 .autor_tarjeta_interactiva_acciones {
     margin-top: auto;
 }
-.autor_tarjeta_interactiva-boton {
+.autor_tarjeta_interactiva_boton {
     display: inline-flex;
     justify-content: center;
     width: 100%;
@@ -548,7 +548,7 @@ main {
     font-weight: 600;
     transition: background-color var(--transition-short);
 }
-.autor_tarjeta_interactiva-boton:hover {
+.autor_tarjeta_interactiva_boton:hover {
     background-color: var(--primary-dark);
 }
 .autores_vacio {
@@ -643,7 +643,7 @@ main {
     box-shadow: var(--shadow-lg);
     transform: translateY(-3px);
 }
-.catalogo_libro_tarjeta-imagen {
+.catalogo_libro_tarjeta_imagen {
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -667,7 +667,7 @@ main {
     color: var(--outline);
     margin-bottom: var(--spacing-xs);
 }
-.catalogo_libro_tarjeta_interactiva-meta {
+.catalogo_libro_tarjeta_interactiva_meta {
     display: flex;
     gap: var(--spacing-sm);
     flex-wrap: wrap;
@@ -742,7 +742,7 @@ main {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: var(--spacing-lg);
     }
-    .catalogo_libro_tarjeta-imagen {
+    .catalogo_libro_tarjeta_imagen {
         height: 200px;
     }
 }
@@ -754,7 +754,7 @@ main {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-md);
     }
-    .catalogo_libro_tarjeta-imagen {
+    .catalogo_libro_tarjeta_imagen {
         height: 150px;
     }
     .catalogo_libro_tarjeta_interactiva-contenido {
@@ -854,7 +854,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: var(--spacing-lg);
 }
-.libro-relacionado {
+.libro_relacionado {
     background-color: var(--surface-container-lowest);
     border-radius: var(--radius-md);
     padding: var(--spacing-md);
@@ -863,15 +863,15 @@ main {
     flex-direction: column;
     gap: var(--spacing-xs);
 }
-.libro-relacionado-titulo {
+.libro_relacionado_titulo {
     margin: 0;
     font-size: var(--font-size-body-md);
 }
-.libro-relacionado-meta {
+.libro_relacionado_meta {
     color: var(--outline);
     font-size: var(--font-size-body-sm);
 }
-.libro-relacionado a {
+.libro_relacionado a {
     margin-top: auto;
     color: var(--primary);
     text-decoration: none;
@@ -940,7 +940,7 @@ main {
     font-size: var(--font-size-headline-sm);
     text-align: center;
 }
-.grid-categorias {
+.grid_categorias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: var(--spacing-md);
@@ -1057,4 +1057,112 @@ section.tarjeta_interactiva {
 #formulario_login button {
     width: 100%;
     border: none;
+}
+.detalle_tarjeta_principal {
+    border-top: 5px solid var(--primary);
+    padding: var(--spacing-2xl);
+    align-items: start;
+}
+.detalle_imagen_contenedor {
+    position: relative;
+    text-align: center;
+}
+.detalle_imagen_estilo {
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--outline-variant);
+    max-width: 100%;
+    border-radius: var(--radius-sm);
+}
+.detalle_informacion_centrada {
+    justify-content: center;
+}
+.detalle_etiquetas_contenedor {
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    gap: var(--spacing-sm);
+}
+.etiqueta_genero {
+    background-color: var(--primary-light);
+    color: var(--on-primary);
+    font-weight: 600;
+}
+.etiqueta_anio {
+    background-color: var(--surface-container-high);
+    border: 1px solid var(--outline-variant);
+}
+.detalle_titulo_principal {
+    font-size: var(--font-size-display-sm);
+    font-weight: 700;
+    color: var(--primary-dark);
+    line-height: 1.1;
+}
+.detalle_autor_texto {
+    font-size: var(--font-size-title-md);
+    color: var(--outline);
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-lg);
+}
+.detalle_autor_enlace {
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: underline;
+}
+.detalle_meta_caja {
+    background-color: var(--surface-container-low);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--secondary);
+    margin-bottom: var(--spacing-lg);
+}
+.detalle_meta_lista {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+.detalle_meta_fuerte {
+    color: var(--on-surface);
+}
+.detalle_isbn_codigo {
+    background: var(--surface-container-high);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.detalle_sinopsis_titulo {
+    font-size: var(--font-size-title-sm);
+    color: var(--on-surface);
+    margin-bottom: var(--spacing-sm);
+}
+.detalle_sinopsis_texto {
+    line-height: 1.7;
+    color: var(--outline);
+    font-size: var(--font-size-body-lg);
+}
+.libro_relacionado_articulo {
+    border-left: 4px solid var(--primary-light);
+    background: var(--surface-container-lowest);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+.libro_relacionado_titulo_estilo {
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+.etiqueta_relacionado {
+    font-size: 0.7rem;
+    background-color: var(--surface-container-high);
+    color: var(--outline);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.enlace_relacionado_contenedor {
+    margin-top: var(--spacing-md);
+}
+.enlace_relacionado {
+    font-size: var(--font-size-label-md);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }

@@ -21,10 +21,9 @@ const modulo_editoriales = (() => {
         tabla_elemento.style.display = "table";
         cuerpo_tabla.innerHTML = editoriales
             .map((editorial) => {
-                const libros_de_editorial = biblioteca
-                    .obtener_libros()
-                    .filter(
-                        (libro) => libro.editorial_id === editorial.id,
+                const libros_de_editorial =
+                    biblioteca.obtener_libros_por_editorial(
+                        editorial.id,
                     ).length;
                 return `
                     <tr>
@@ -52,9 +51,7 @@ const modulo_editoriales = (() => {
         cargar_editoriales();
         vincular_eventos();
     };
-    return {
-        inicializar: inicializar,
-    };
+    return { inicializar: inicializar };
 })();
 document.addEventListener("DOMContentLoaded", () => {
     modulo_editoriales.inicializar();

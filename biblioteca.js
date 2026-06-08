@@ -7,7 +7,6 @@ class clase_biblioteca {
             generos: {},
             usuarios: [],
         };
-        this.esta_cargado = false;
         this.promesa_carga = this.cargar_datos();
         this.verificar_sesion();
     }
@@ -120,7 +119,6 @@ class clase_biblioteca {
                 contrasenia:
                     nodo.querySelector("contrasenia")?.textContent || "",
             }));
-            this.esta_cargado = true;
             return true;
         } catch (error) {
             console.error("Error al cargar y procesar XML: ", error);
@@ -159,6 +157,11 @@ class clase_biblioteca {
     }
     obtener_libros_por_autor(id_autor) {
         return this.datos.libros.filter((libro) => libro.autor_id === id_autor);
+    }
+    obtener_libros_por_editorial(id_editorial) {
+        return this.datos.libros.filter(
+            (libro) => libro.editorial_id === id_editorial,
+        );
     }
     obtener_autores() {
         return Object.values(this.datos.autores).sort((a, b) =>
