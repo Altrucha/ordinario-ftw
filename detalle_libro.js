@@ -11,7 +11,7 @@ const detalle_libro_modulo = (() => {
         contenedor.innerHTML = `
             <div class="detalle_tarjeta_interactiva detalle_tarjeta_principal">
                 <div class="detalle_imagen_contenedor">
-                    <img src="${libro.portada}" class="detalle_imagen detalle_imagen_estilo" onerror="this.src='sin_portada.png';" />
+                    <img src="${libro.portada}" alt="Portada de ${libro.titulo}" class="detalle_imagen detalle_imagen_estilo" onerror="this.src='sin_portada.png';" />
                 </div>
                 <div class="detalle_informacion detalle_informacion_centrada">
                     <div class="detalle_etiquetas_contenedor">

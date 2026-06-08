@@ -63,7 +63,7 @@ const catalogo_modulo = (() => {
                     <tr>
                         <td style="width: 70px; text-align: center;">
                             <img 
-                                src="${libro.portada}"
+                                src="${libro.portada} alt="Portada de ${libro.titulo}"
                                 style="width: 64px; height: 100px; object-fit: cover; border-radius: var(--radius-xs);" 
                                 onerror="this.src='sin_portada.png'"
                             />
