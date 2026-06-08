@@ -463,10 +463,6 @@ main {
 .visible {
     display: block;
 }
-
-/* Page-specific module styles */
-
-/* Acerca de */
 .acerca_main {
     display: grid;
     grid-template-columns: 1fr;
@@ -474,11 +470,9 @@ main {
     justify-items: center;
     padding: 0 var(--spacing-xl);
 }
-
 .acerca_contenido {
     width: min(100%, 760px);
 }
-
 .acerca_cita {
     border-left: 4px solid var(--primary);
     padding-left: 1rem;
@@ -486,51 +480,41 @@ main {
     font-style: italic;
     color: var(--outline);
 }
-
 @media (min-width: 768px) {
     .acerca_main {
         padding: 0;
     }
 }
-
-/* Autores */
-
-.autores_main {
+.autores_editoriales_main {
     padding: var(--spacing-lg);
     background-color: var(--surface);
 }
-
-.autores_container {
+.autores_editoriales_container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     gap: var(--spacing-lg);
 }
-
-.autores_header {
+.autores_editoriales_header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
     margin-bottom: var(--spacing-lg);
 }
-
-.autores_header h2 {
+.autores_editoriales_header h2 {
     font-size: var(--font-size-headline-sm);
     margin: 0;
 }
-
-.autores_header p {
+.autores_editoriales_header p {
     color: var(--outline);
     font-size: var(--font-size-body-md);
     margin: 0;
 }
-
 .autores-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
 }
-
 .autor-tarjeta_interactiva {
     background-color: var(--surface-container-lowest);
     border-radius: var(--radius-md);
@@ -540,22 +524,18 @@ main {
     flex-direction: column;
     gap: var(--spacing-sm);
 }
-
 .autor-tarjeta_interactiva-nombre {
     font-size: var(--font-size-title-md);
     margin: 0;
 }
-
 .autor-tarjeta_interactiva-libros {
     color: var(--outline);
     font-size: var(--font-size-body-sm);
     margin: 0;
 }
-
 .autor-tarjeta_interactiva_acciones {
     margin-top: auto;
 }
-
 .autor-tarjeta_interactiva-btn {
     display: inline-flex;
     justify-content: center;
@@ -568,11 +548,9 @@ main {
     font-weight: 600;
     transition: background-color var(--transition-short);
 }
-
 .autor-tarjeta_interactiva-btn:hover {
     background-color: var(--primary-dark);
 }
-
 .autores_vacio {
     padding: 3rem 1rem;
     border: 1px dashed var(--outline-variant);
@@ -580,22 +558,19 @@ main {
     color: var(--outline);
     border-radius: var(--radius-lg);
 }
-
 @media (max-width: 768px) {
-    .autores_main {
+    .autores_editoriales_main {
         padding: var(--spacing-md);
     }
     .autores-grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
-
-/* Catálogo */
 .catalogo_main {
     padding: var(--spacing-lg);
     background-color: var(--surface);
 }
-.catalogo-container {
+.catalogo_container {
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: var(--spacing-lg);
@@ -748,7 +723,7 @@ main {
     font-size: var(--font-size-body-md);
 }
 @media (max-width: 1024px) {
-    .catalogo-container {
+    .catalogo_container {
         grid-template-columns: 240px 1fr;
     }
     .filtros_panel {
@@ -756,7 +731,7 @@ main {
     }
 }
 @media (max-width: 768px) {
-    .catalogo-container {
+    .catalogo_container {
         grid-template-columns: 1fr;
     }
     .filtros_panel {
@@ -789,8 +764,6 @@ main {
         font-size: var(--font-size-label-lg);
     }
 }
-
-/* Detalle del libro */
 .detalle_main {
     padding: var(--spacing-lg);
     background-color: var(--surface);
@@ -920,8 +893,6 @@ main {
         min-height: 320px;
     }
 }
-
-/* Inicio */
 .presentacion {
     background: linear-gradient(
         135deg,

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Editoriales - Biblioteca Digital</title>
+        <link rel="stylesheet" href="configuracion-vista.css" />
+    </head>
+    <body>
+        <div id="componente_encabezado"></div>
+        <main class="autores_editoriales_main">
+            <div class="autores_editoriales_container">
+                <div class="autores_editoriales_header">
+                    <h2>Editoriales</h2>
+                    <p>
+                        Explora las editoriales disponibles en nuestra
+                        biblioteca.
+                    </p>
+                </div>
+                <div
+                    class="filtro_grupo"
+                    style="margin-bottom: var(--spacing-lg)"
+                >
+                    <label for="busqueda_editorial">Buscar editorial</label>
+                    <input
+                        type="text"
+                        id="busqueda_editorial"
+                        class="input"
+                        placeholder="Ej: Planeta"
+                    />
+                </div>
+                <div style="overflow-x: auto">
+                    <table
+                        class="tabla_datos"
+                        id="tabla_editoriales"
+                        aria-label="Lista de editoriales disponibles"
+                    >
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre de la editorial</th>
+                                <th scope="col">Disponibles</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpo_tabla_editoriales"></tbody>
+                    </table>
+                </div>
+                <div
+                    id="editoriales_vacio"
+                    class="autores_vacio oculto"
+                    role="alert"
+                >
+                    No hay editoriales disponibles.
+                </div>
+            </div>
+        </main>
+        <div id="componente_pie_pagina"></div>
+        <script src="biblioteca.js"></script>
+        <script src="editoriales.js"></script>
+    </body>
+</html>

@@ -20,8 +20,10 @@ const autores_modulo = (() => {
                 </div>
             </footer>
         `;
-        document.getElementById("componente_header").innerHTML = header_html;
-        document.getElementById("componente_footer").innerHTML = footer_html;
+        document.getElementById("componente_encabezado").innerHTML =
+            header_html;
+        document.getElementById("componente_pie_pagina").innerHTML =
+            footer_html;
     };
     const cargar_autores = () => {
         const cuerpo_tabla = document.getElementById("cuerpo_tabla_autores");

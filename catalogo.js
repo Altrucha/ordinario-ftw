@@ -26,8 +26,10 @@ const catalogo_modulo = (() => {
                 </div>
             </footer>
         `;
-        document.getElementById("componente_header").innerHTML = header_html;
-        document.getElementById("componente_footer").innerHTML = footer_html;
+        document.getElementById("componente_encabezado").innerHTML =
+            header_html;
+        document.getElementById("componente_pie_pagina").innerHTML =
+            footer_html;
     };
     const cargar_parametros_de_url = () => {
         const parametros = new URLSearchParams(window.location.search);

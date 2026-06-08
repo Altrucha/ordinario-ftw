@@ -14,8 +14,8 @@ const login_modulo = (() => {
                 </div>
             </footer>
         `;
-        document.getElementById("componente_header").innerHTML = headerHTML;
-        document.getElementById("componente_footer").innerHTML = footerHTML;
+        document.getElementById("componente_encabezado").innerHTML = headerHTML;
+        document.getElementById("componente_pie_pagina").innerHTML = footerHTML;
     };
     const vincular_eventos = () => {
         elementos.formulario = document.getElementById("formulario_login");

@@ -20,8 +20,10 @@ const acerca_de_modulo = (() => {
                 </div>
             </footer>
         `;
-        document.getElementById("componente_header").innerHTML = header_html;
-        document.getElementById("componente_footer").innerHTML = footer_html;
+        document.getElementById("componente_encabezado").innerHTML =
+            header_html;
+        document.getElementById("componente_pie_pagina").innerHTML =
+            footer_html;
     };
     const cargar_estadisticas = () => {
         document.getElementById("total_libros").textContent =

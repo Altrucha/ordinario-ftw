@@ -21,8 +21,10 @@ const detalle_libro_modulo = (() => {
                 </div>
             </footer>
         `;
-        document.getElementById("componente_header").innerHTML = header_html;
-        document.getElementById("componente_footer").innerHTML = footer_html;
+        document.getElementById("componente_encabezado").innerHTML =
+            header_html;
+        document.getElementById("componente_pie_pagina").innerHTML =
+            footer_html;
     };
     const mostrar_error = (mensaje) => {
         const contenedor = document.getElementById("detalle_contenido");
