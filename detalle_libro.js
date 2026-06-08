@@ -1,31 +1,4 @@
 const detalle_libro_modulo = (() => {
-    const renderizar_componentes = () => {
-        const header_html = `
-            <header class="barra_superior">
-                <img src="logo.png" alt="Logo Biblioteca Digital" class="barra_superior_logo" />
-                <h1>Biblioteca Digital</h1>
-                <nav class="barra_superior_acciones" aria-label="Navegación principal">
-                    <a href="inicio.html" class="boton_primario">Inicio</a>
-                    <a href="catalogo.html" class="boton_primario">Catálogo</a>
-                    <a href="autores.html" class="boton_primario">Autores</a>
-                    <a href="editoriales.html" class="boton_primario">Editoriales</a>
-                    <a href="acerca-de.html" class="boton_primario">Acerca de</a>
-                    <a href="#" id="boton_cerrar_sesion" class="boton_primario" style="background-color: var(--error);">Cerrar Sesión</a>
-                </nav>
-            </header>
-        `;
-        const footer_html = `
-            <footer class="footer">
-                <div class="container">
-                    <p>&copy;2026 Biblioteca Digital. Todos los derechos reservados.</p>
-                </div>
-            </footer>
-        `;
-        document.getElementById("componente_encabezado").innerHTML =
-            header_html;
-        document.getElementById("componente_pie_pagina").innerHTML =
-            footer_html;
-    };
     const mostrar_error = (mensaje) => {
         const contenedor = document.getElementById("detalle_contenido");
         contenedor.innerHTML = `<div class="mensaje_error" role="alert">${mensaje}</div>`;
@@ -47,10 +20,10 @@ const detalle_libro_modulo = (() => {
                 </div>
                 <div class="detalle_informacion" style="justify-content: center;">
                     <div style="margin-bottom: var(--spacing-sm); display: flex; gap: var(--spacing-sm);">
-                        <span class="badge" style="background-color: var(--primary-light); color: var(--on-primary); font-weight: 600;">
+                        <span class="etiqueta" style="background-color: var(--primary-light); color: var(--on-primary); font-weight: 600;">
                             ${genero_nombre}
                         </span>
-                        <span class="badge" style="background-color: var(--surface-container-high); border: 1px solid var(--outline-variant);">
+                        <span class="etiqueta" style="background-color: var(--surface-container-high); border: 1px solid var(--outline-variant);">
                             Año ${libro.anio}
                         </span>
                     </div>
@@ -109,7 +82,7 @@ const detalle_libro_modulo = (() => {
                 (item) => `
                 <article class="libro-relacionado" style="border-left: 4px solid var(--primary-light); background: var(--surface-container-lowest); transition: transform 0.2s, box-shadow 0.2s;">
                     <h4 class="libro-relacionado-titulo" style="color: var(--primary-dark); font-weight: 600; margin-bottom: var(--spacing-xs);">${item.titulo}</h4>
-                    <span class="badge" style="font-size: 0.7rem; background-color: var(--surface-container-high); color: var(--outline); padding: 2px 8px; border-radius: 4px;">
+                    <span class="etiqueta" style="font-size: 0.7rem; background-color: var(--surface-container-high); color: var(--outline); padding: 2px 8px; border-radius: 4px;">
                         ${item.detalle}
                     </span>
                     <div style="margin-top: var(--spacing-md);">
@@ -123,7 +96,7 @@ const detalle_libro_modulo = (() => {
             .join("");
     };
     const inicializar = async () => {
-        renderizar_componentes();
+        biblioteca.renderizar_componentes_globales();
         await biblioteca.esperar_carga();
         const parametros = new URLSearchParams(window.location.search);
         const id_libro = parametros.get("id");
@@ -141,9 +114,9 @@ const detalle_libro_modulo = (() => {
         cargar_relacionados(libro_enriquecido);
     };
     return {
-        init: inicializar,
+        inicializar_modulo: inicializar,
     };
 })();
 document.addEventListener("DOMContentLoaded", () => {
-    detalle_libro_modulo.init();
+    detalle_libro_modulo.inicializar_modulo();
 });

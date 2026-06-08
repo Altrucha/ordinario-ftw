@@ -5,32 +5,6 @@ const catalogo_modulo = (() => {
         autor: "",
         orden: "titulo_ascendente",
     };
-    const renderizar_componentes = () => {
-        const header_html = `
-            <header class="barra_superior">
-                <img src="logo.png" alt="Logo Biblioteca Digital" class="barra_superior_logo" />
-                <h1>Biblioteca Digital</h1>
-                <nav class="barra_superior_acciones" aria-label="Navegación principal">
-                    <a href="inicio.html" class="boton_primario">Inicio</a>
-                    <a href="autores.html" class="boton_primario">Autores</a>
-                    <a href="editoriales.html" class="boton_primario">Editoriales</a>
-                    <a href="acerca-de.html" class="boton_primario">Acerca de</a>
-                    <a href="#" id="boton_cerrar_sesion" class="boton_primario" style="background-color: var(--error);">Cerrar sesión</a>
-                </nav>
-            </header>
-        `;
-        const footer_html = `
-            <footer class="footer">
-                <div class="container">
-                    <p>&copy;2026 Biblioteca Digital. Todos los derechos reservados.</p>
-                </div>
-            </footer>
-        `;
-        document.getElementById("componente_encabezado").innerHTML =
-            header_html;
-        document.getElementById("componente_pie_pagina").innerHTML =
-            footer_html;
-    };
     const cargar_parametros_de_url = () => {
         const parametros = new URLSearchParams(window.location.search);
         if (parametros.has("busqueda")) {
@@ -57,11 +31,11 @@ const catalogo_modulo = (() => {
         switch (orden) {
             case "titulo_ascendente":
                 return copia.sort((a, b) => a.titulo.localeCompare(b.titulo));
-            case "titulo-descendente":
+            case "titulo_descendente":
                 return copia.sort((a, b) => b.titulo.localeCompare(a.titulo));
-            case "anio-ascendente":
+            case "anio_ascendente":
                 return copia.sort((a, b) => a.anio - b.anio);
-            case "anio-descendente":
+            case "anio_descendente":
                 return copia.sort((a, b) => b.anio - a.anio);
             default:
                 return copia;
@@ -96,10 +70,10 @@ const catalogo_modulo = (() => {
                         </td>
                         <td><strong>${libro.titulo}</strong></td>
                         <td>${autor?.nombre}</td>
-                        <td><span class="badge">${genero?.nombre}</span></td>
+                        <td><span class="etiqueta">${genero?.nombre}</span></td>
                         <td><code>${libro.anio}</code></td>
                         <td>
-                            <a href="detalle_libro.html?id=${libro.id}" class="btn boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
+                            <a href="detalle_libro.html?id=${libro.id}" class="boton boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
                                 Ver detalles
                             </a>
                         </td>
@@ -168,16 +142,16 @@ const catalogo_modulo = (() => {
             .addEventListener("click", limpiar_filtros);
     };
     const inicializar = async () => {
-        renderizar_componentes();
+        biblioteca.renderizar_componentes_globales();
         await biblioteca.esperar_carga();
         cargar_parametros_de_url();
         vincular_eventos();
         aplicar_filtros();
     };
     return {
-        init: inicializar,
+        inicializar_modulo: inicializar,
     };
 })();
 document.addEventListener("DOMContentLoaded", () => {
-    catalogo_modulo.init();
+    catalogo_modulo.inicializar_modulo();
 });

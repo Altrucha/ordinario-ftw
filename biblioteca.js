@@ -11,6 +11,47 @@ class clase_biblioteca {
         this.promesa_carga = this.cargar_datos();
         this.verificar_sesion();
     }
+    renderizar_componentes_globales() {
+        const ruta_actual = window.location.pathname;
+        const enlaces_disponibles = [
+            { url: "inicio.html", texto: "Inicio" },
+            { url: "catalogo.html", texto: "Catálogo" },
+            { url: "autores.html", texto: "Autores" },
+            { url: "editoriales.html", texto: "Editoriales" },
+            { url: "acerca_de.html", texto: "Acerca de" },
+        ];
+        const html_enlaces = enlaces_disponibles
+            .filter((enlace) => !ruta_actual.includes(enlace.url))
+            .map(
+                (enlace) =>
+                    `<a href="${enlace.url}" class="boton_primario">${enlace.texto}</a>`,
+            )
+            .join("\n                    ");
+        const html_encabezado = `
+            <header class="barra_superior">
+                <img src="logo.png" alt="Logo Biblioteca Digital" class="barra_superior_logo" />
+                <h1>Biblioteca Digital</h1>
+                <nav class="barra_superior_acciones" aria-label="Navegación principal">
+                    ${html_enlaces}
+                    <a href="#" id="boton_cerrar_sesion" class="boton_primario" style="background-color: var(--error);">Cerrar sesión</a>
+                </nav>
+            </header>
+        `;
+        const html_pie_pagina = `
+            <footer class="pie_pagina">
+                <div class="contenedor">
+                    <p>&copy;2026 Biblioteca Digital. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        `;
+        const elemento_encabezado = document.getElementById(
+            "componente_encabezado",
+        );
+        const elemento_pie = document.getElementById("componente_pie_pagina");
+        if (elemento_encabezado)
+            elemento_encabezado.innerHTML = html_encabezado;
+        if (elemento_pie) elemento_pie.innerHTML = html_pie_pagina;
+    }
     verificar_sesion() {
         const ruta_actual = window.location.pathname;
         const es_login =
@@ -138,12 +179,6 @@ class clase_biblioteca {
     }
     obtener_editorial_por_id(id_editorial) {
         return this.datos.editoriales[id_editorial];
-    }
-    buscar_por_titulo(consulta) {
-        const termino = consulta.toLowerCase();
-        return this.datos.libros.filter((libro) =>
-            libro.titulo.toLowerCase().includes(termino),
-        );
     }
     filtrar_libros(filtros) {
         let resultado = [...this.datos.libros];

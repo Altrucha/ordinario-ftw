@@ -1,26 +1,26 @@
 const inicio_modulo = (() => {
     const renderizar_componentes = () => {
-        const header_html = `
-            <header class="barra_superior">
+        const encabezado_html = `
+            <encabezado class="barra_superior">
                 <img src="logo.png" alt="Logo Biblioteca Digital" class="barra_superior_logo" />
                 <h1>Biblioteca Digital</h1>
                 <nav class="barra_superior_acciones" aria-label="Navegación principal">
-                    <a href="acerca-de.html" class="boton_primario">Acerca de</a>
+                    <a href="acerca_de.html" class="boton_primario">Acerca de</a>
                     <a href="#" id="boton_cerrar_sesion" class="boton_primario" style="background-color: var(--error);">Cerrar sesión</a>
                 </nav>
-            </header>
+            </encabezado>
         `;
-        const footer_html = `
-            <footer class="footer">
-                <div class="container">
+        const pie_pagina_html = `
+            <pie_pagina class="pie_pagina">
+                <div class="contenedor">
                     <p>&copy;2026 Biblioteca Digital. Todos los derechos reservados.</p>
                 </div>
-            </footer>
+            </pie_pagina>
         `;
         document.getElementById("componente_encabezado").innerHTML =
-            header_html;
+            encabezado_html;
         document.getElementById("componente_pie_pagina").innerHTML =
-            footer_html;
+            pie_pagina_html;
     };
     const cargar_tabla_generos = () => {
         const cuerpo_tabla = document.getElementById("cuerpo_tabla_generos");
@@ -28,7 +28,7 @@ const inicio_modulo = (() => {
         if (!generos || generos.length === 0) {
             cuerpo_tabla.innerHTML = `
                 <tr>
-                    <td colspan="3" class="text-center text-muted">No hay datos disponibles.</td>
+                    <td colspan="3" class="texto_centro texto_silenciado">No hay datos disponibles.</td>
                 </tr>
             `;
             return;
@@ -42,12 +42,12 @@ const inicio_modulo = (() => {
                     <tr>
                         <td><strong>${genero.nombre}</strong></td>
                         <td>
-                            <span class="badge">
+                            <span class="etiqueta">
                                 ${total_libros} libro${total_libros !== 1 ? "s" : ""}
                             </span>
                         </td>
                         <td>
-                            <a href="catalogo.html?genero=${genero.id}" class="btn boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
+                            <a href="catalogo.html?genero=${genero.id}" class="boton boton_primario" style="padding: var(--spacing-xs) var(--spacing-sm); font-size: var(--font-size-label-sm);">
                                 Ver libros
                             </a>
                         </td>
@@ -56,26 +56,15 @@ const inicio_modulo = (() => {
             })
             .join("");
     };
-    const cargar_estadisticas = () => {
-        document.getElementById("total_libros").textContent =
-            biblioteca.obtener_libros().length;
-        document.getElementById("total_autores").textContent =
-            biblioteca.obtener_autores().length;
-        document.getElementById("total_generos").textContent =
-            biblioteca.obtener_generos().length;
-        document.getElementById("total_editoriales").textContent =
-            biblioteca.obtener_editoriales().length;
-    };
     const inicializar = async () => {
         renderizar_componentes();
         await biblioteca.esperar_carga();
         cargar_tabla_generos();
-        cargar_estadisticas();
     };
     return {
-        init: inicializar,
+        inicializar_modulo: inicializar,
     };
 })();
 document.addEventListener("DOMContentLoaded", () => {
-    inicio_modulo.init();
+    inicio_modulo.inicializar_modulo();
 });

@@ -1,21 +1,23 @@
 const login_modulo = (() => {
     let elementos = {};
     const renderizar_componentes = () => {
-        const headerHTML = `
-            <header class="barra_superior">
+        const html_encabezado = `
+            <encabezado class="barra_superior">
                 <img src="logo.png" alt="Logo Biblioteca Digital" class="barra_superior_logo" />
                 <h1>Biblioteca Digital</h1>
-            </header>
+            </encabezado>
         `;
-        const footerHTML = `
-            <footer class="footer">
-                <div class="container">
+        const html_pie_pagina = `
+            <pie_pagina class="pie_pagina">
+                <div class="contenedor">
                     <p>&copy;2026 Biblioteca Digital. Todos los derechos reservados.</p>
                 </div>
-            </footer>
+            </pie_pagina>
         `;
-        document.getElementById("componente_encabezado").innerHTML = headerHTML;
-        document.getElementById("componente_pie_pagina").innerHTML = footerHTML;
+        document.getElementById("componente_encabezado").innerHTML =
+            html_encabezado;
+        document.getElementById("componente_pie_pagina").innerHTML =
+            html_pie_pagina;
     };
     const vincular_eventos = () => {
         elementos.formulario = document.getElementById("formulario_login");
@@ -45,9 +47,9 @@ const login_modulo = (() => {
         vincular_eventos();
     };
     return {
-        init: inicializar,
+        inicializar_modulo: inicializar,
     };
 })();
 document.addEventListener("DOMContentLoaded", () => {
-    login_modulo.init();
+    login_modulo.inicializar_modulo();
 });

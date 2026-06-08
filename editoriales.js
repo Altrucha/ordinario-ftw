@@ -1,30 +1,4 @@
 const modulo_editoriales = (() => {
-    const renderizar_componentes = () => {
-        const html_encabezado = `
-            <header class="barra_superior">
-                <img src="logo.png" alt="Logo Biblioteca Digital" class="barra_superior_logo" />
-                <h1>Biblioteca Digital</h1>
-                <nav class="barra_superior_acciones" aria-label="Navegación principal">
-                    <a href="inicio.html" class="boton_primario">Inicio</a>
-                    <a href="catalogo.html" class="boton_primario">Catálogo</a>
-                    <a href="autores.html" class="boton_primario">Autores</a>
-                    <a href="acerca-de.html" class="boton_primario">Acerca de</a>
-                    <a href="#" id="boton_cerrar_sesion" class="boton_primario" style="background-color: var(--error);">Cerrar Sesión</a>
-                </nav>
-            </header>
-        `;
-        const html_pie_pagina = `
-            <footer class="footer">
-                <div class="container">
-                    <p>&copy;2026 Biblioteca Digital. Todos los derechos reservados.</p>
-                </div>
-            </footer>
-        `;
-        document.getElementById("componente_encabezado").innerHTML =
-            html_encabezado;
-        document.getElementById("componente_pie_pagina").innerHTML =
-            html_pie_pagina;
-    };
     const cargar_editoriales = (filtro = "") => {
         const cuerpo_tabla = document.getElementById(
             "cuerpo_tabla_editoriales",
@@ -56,7 +30,7 @@ const modulo_editoriales = (() => {
                     <tr>
                         <td><strong>${editorial.nombre}</strong></td>
                         <td>
-                            <span class="badge">
+                            <span class="etiqueta">
                                 ${libros_de_editorial} libro${libros_de_editorial !== 1 ? "s" : ""}
                             </span>
                         </td>
@@ -73,7 +47,7 @@ const modulo_editoriales = (() => {
             });
     };
     const inicializar = async () => {
-        renderizar_componentes();
+        biblioteca.renderizar_componentes_globales();
         await biblioteca.esperar_carga();
         cargar_editoriales();
         vincular_eventos();

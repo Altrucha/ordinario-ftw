@@ -4,12 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Catálogo - Biblioteca Digital</title>
-        <link rel="stylesheet" href="configuracion-vista.css" />
+        <link rel="stylesheet" href="configuracion_vista.css" />
     </head>
     <body>
         <div id="componente_encabezado"></div>
         <main class="catalogo_main">
-            <div class="catalogo_container">
+            <div class="catalogo_contenedor">
                 <aside class="filtros_panel" aria-labelledby="titulo_filtros">
                     <h3 id="titulo_filtros">Filtros</h3>
                     <div class="filtro_grupo">
@@ -27,13 +27,13 @@
                             <option value="titulo_ascendente">
                                 Título (A-Z)
                             </option>
-                            <option value="titulo-descendente">
+                            <option value="titulo_descendente">
                                 Título (Z-A)
                             </option>
-                            <option value="anio-ascendente">
+                            <option value="anio_ascendente">
                                 Año (más viejos)
                             </option>
-                            <option value="anio-descendente">
+                            <option value="anio_descendente">
                                 Año (más nuevos)
                             </option>
                         </select>
@@ -41,7 +41,7 @@
                     <div class="filtro_acciones">
                         <button
                             id="limpiar_filtros"
-                            class="btn boton_secundario"
+                            class="boton boton_secundario"
                             style="width: 100%"
                         >
                             Limpiar filtros
@@ -52,7 +52,7 @@
                     class="catalogo_contenido"
                     aria-labelledby="titulo_catalogo"
                 >
-                    <div class="catalogo_header">
+                    <div class="catalogo_encabezado">
                         <h2 id="titulo_catalogo">Catálogo</h2>
                         <p id="resultados_info" aria-live="polite">
                             Cargando catálogo...
